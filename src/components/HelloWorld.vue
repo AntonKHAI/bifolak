@@ -58,8 +58,7 @@
     <b-row class="mt-5 px-3 py-3 justify-content-between">
       <b-col md="6" sm="12" class="flex justify-content-center mb-4">
         <b-card
-          title="Card Title 1"
-          img-src="https://picsum.photos/600/300/?image=25"
+          img-src="https://onclinic.ua/storage/media/articles/331/SwHBEBwYqgaynnsmyZ8rExh0pMmRKby9UXp11gBJ.jpg"
           img-alt="Image"
           img-top
           tag="article"
@@ -67,13 +66,13 @@
           class="mb-2"
         >
           <b-card-text>
-            Some quick example text to build on the card title and make up the bulk of the card's content.
+            Лечение и профилактика
+            вагинальных дисбиозов
           </b-card-text>
         </b-card>
       </b-col><b-col md="6" sm="12" class="flex justify-content-center mb-4">
         <b-card
-          title="Card Title 2"
-          img-src="https://picsum.photos/600/300/?image=25"
+          img-src="https://ginokomfort.ru/upload/medialibrary/086/x0868ca29e7272cc29750e87588a14cb5.jpg.pagespeed.ic.d_tHlY-EzZ.jpg"
           img-alt="Image"
           img-top
           tag="article"
@@ -81,13 +80,13 @@
           class="mb-2"
         >
           <b-card-text>
-            Some quick example text to build on the card title and make up the bulk of the card's content.
+            Комплексное лечение:
+            острых, подострых, хронических вульвитов и вагинитов, постменопаузального атрофического вагинита, бактериального вагиноза
           </b-card-text>
         </b-card>
       </b-col><b-col md="6" sm="12" class="flex justify-content-center mb-4">
         <b-card
-          title="Card Title"
-          img-src="https://picsum.photos/600/300/?image=25"
+          img-src="https://lh3.googleusercontent.com/proxy/3p1iWxX8TEF6S-TNFqhfcz7LcsWNXDw16R6fu13e3nxlRd3baN7A5WFWS9OyEkMjE5mOpfJcHQCcvd3LK9wRNtumtsA0uQNHto4IT_bW616DNcSrzA"
           img-alt="Image"
           img-top
           tag="article"
@@ -95,13 +94,14 @@
           class="mb-2"
         >
           <b-card-text>
-            Some quick example text to build on the card title and make up the bulk of the card's content.
+            Профилактика:
+            послеоперационных инфекционных осложнений,
+            дисбиотических изменений урогенитального тракта на фоне антибактериальной терапии
           </b-card-text>
         </b-card>
       </b-col><b-col md="6" sm="12" class="flex justify-content-center mb-4">
         <b-card
-          title="Card Title"
-          img-src="https://picsum.photos/600/300/?image=25"
+          img-src="https://uni-center.com/upload/medialibrary/468/4685a9569dbb75ef66fb88004463319c.jpg"
           img-alt="Image"
           img-top
           tag="article"
@@ -109,7 +109,7 @@
           class="mb-2"
         >
           <b-card-text>
-            Some quick example text to build on the card title and make up the bulk of the card's content.
+            Предродовая подготовка беременных женщин, входящих в группу риска в отношении воспалительных заболеваний
           </b-card-text>
         </b-card>
       </b-col>
