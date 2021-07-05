@@ -58,7 +58,7 @@
     <b-row class="mt-5 px-3 py-3 justify-content-between">
       <b-col md="6" sm="12" class="flex justify-content-center mb-4">
         <b-card
-          title="Card Title"
+          title="Card Title 1"
           img-src="https://picsum.photos/600/300/?image=25"
           img-alt="Image"
           img-top
@@ -72,7 +72,7 @@
         </b-card>
       </b-col><b-col md="6" sm="12" class="flex justify-content-center mb-4">
         <b-card
-          title="Card Title"
+          title="Card Title 2"
           img-src="https://picsum.photos/600/300/?image=25"
           img-alt="Image"
           img-top
