@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <b-navbar fixed="top" class="justify-content-between">
-      <b-navbar-brand href="#">Lek Prime</b-navbar-brand>
+      <b-navbar-brand href="#">Bifolak</b-navbar-brand>
 
       <b-collapse is-nav>
         <!-- Right aligned nav items -->
@@ -19,16 +19,16 @@
       </b-collapse>
     </b-navbar>
     <div>
-      <b-sidebar id="sidebar-1" backdrop shadow @hidden="toggle">
+      <b-sidebar id="sidebar-1" backdrop shadow @hidden="toggle" v-if="openSidebar">
         <template #header>
           Bifolak
         </template>
-        <b-list-group class="px-2">
-          <b-list-group-item @click="scrollToBlock('#for')" class="pointer">Для кого?</b-list-group-item>
-          <b-list-group-item @click="scrollToBlock('#for-what')" class="pointer">Для чого?</b-list-group-item>
-          <b-list-group-item @click="scrollToBlock('#why')" class="pointer">Чому?</b-list-group-item>
-          <b-list-group-item @click="scrollToBlock('#buy')" class="pointer">Консультант по продукту</b-list-group-item>
-        </b-list-group>
+        <div class="px-2">
+          <div class="mob-nav-item pointer" @click="scrollToBlock('#for')">Для кого?</div>
+          <div class="mob-nav-item pointer" @click="scrollToBlock('#for-what')">Для чого?</div>
+          <div class="mob-nav-item pointer" @click="scrollToBlock('#why')">Чому?</div>
+          <div class="mob-nav-item pointer" @click="scrollToBlock('#buy')">Консультант по продукту</div>
+        </div>
       </b-sidebar>
     </div>
     <div class="mt-5 px-3 py-5">
@@ -137,7 +137,7 @@
         </b-card>
       </b-col>
     </b-row>
-      <div class="mt-5 px-3 py-5" id="why">
+      <div class="mt-3" id="why">
         <div class="mb-5">
           <h2 class="green-title">
             Чому Біфолак?
@@ -145,7 +145,7 @@
         </div>
         <div class="mb-5">
           <b-container fluid>
-            <b-row class="mt-5 px-3 py-3 justify-content-between">
+            <b-row class="mt-3 justify-content-between">
               <b-col md="6" sm="12" class="flex justify-content-center mb-4">
                 <div class="why-bifolak">
                   <div class="why-bifolak__count">
@@ -168,7 +168,7 @@
                 </div>
               </b-col>
             </b-row>
-            <b-row class="mt-5 px-3 py-3 justify-content-between">
+            <b-row class="mt-3 justify-content-between">
               <b-col class="flex justify-content-center mb-4">
                 <div class="why-bifolak">
                   <div class="why-bifolak__data">
@@ -180,7 +180,7 @@
                 </div>
               </b-col>
             </b-row>
-            <b-row class="mt-5 px-3 py-3 justify-content-between">
+            <b-row class="mt-3 justify-content-between">
               <b-col md="6" sm="12" class="flex justify-content-center mb-4">
                 <div class="why-bifolak">
                   <div class="why-bifolak__count">
@@ -205,7 +205,7 @@
           </b-container>
         </div>
       </div>
-      <div class="mt-5 px-3 py-5">
+      <div class="px-3 py-5">
         <div class="mb-5">
           <h2>
             ПРИДБАТИ <span class="green-title">БІФОЛАК</span> МОЖНА ТУТ
@@ -213,24 +213,28 @@
         </div>
         <b-container fluid>
           <b-row class="mt-5 px-3 py-3 justify-content-between">
-            <b-col md="4" sm="12" class="flex justify-content-center mb-4">
-              <div class="card-link" @click="buyIn('https://liki24.com/uk/')">
+            <b-col md="6" sm="12" class="flex justify-content-center mb-4">
+              <div class="card-link card-link__liki-24" @click="buyIn('https://liki24.com/uk/search/?q=%D0%B1%D0%B8%D1%84%D0%BE%D0%BB%D0%B0%D0%BA')">
                 <div class="light-blue-title">
                   LIKI 24
                 </div>
               </div>
             </b-col>
-            <b-col md="4" sm="12" class="flex justify-content-center mb-4">
-              <div class="card-link card-link__invert" @click="buyIn('https://t.me/alexandrarebrova')">
-                <div>
-                  Заказать у поставщика
+            <b-col id="buy" md="6" sm="12" class="flex justify-content-center mb-4">
+              <div class="card-link card-link__tabletki" @click="buyIn('https://tabletki.ua/uk/Бифолак-Печаевские/1040776/pharmacy/kharkov/')">
+                <div class="green-title">
+                  TABLETKI.UA
                 </div>
               </div>
             </b-col>
-            <b-col id="buy" md="4" sm="12" class="flex justify-content-center mb-4">
-              <div class="card-link" @click="buyIn('https://tabletki.ua/uk/')">
-                <div class="green-title">
-                  TABLETKI.UA
+          </b-row>
+        </b-container>
+        <b-container fluid>
+          <b-row class="mt-5 px-3 py-3 justify-content-between">
+            <b-col class="flex justify-content-center mb-4">
+              <div class="card-link card-link__invert" @click="buyIn('https://t.me/alexandrarebrova')">
+                <div>
+                  Консультант по продукту
                 </div>
               </div>
             </b-col>
@@ -266,6 +270,7 @@ export default {
 
     scrollToBlock(id) {
       document.querySelector(id).scrollIntoView({behavior: 'smooth', block: 'start'});
+      this.openSidebar = false
     }
   }
 }
@@ -421,18 +426,27 @@ ol.gradient-list {
   display: flex;
   align-items: center;
   width: 100%;
+  max-width: 550px;
   cursor: pointer;
   font-size: 22px;
   text-transform: uppercase;
   justify-content: center;
   border-radius: 5px;
   border: 1px solid #e3e3e3;
-  padding: 35px 55px;
+  padding: 20px;
 }
 
 .card-link__invert {
   color: #fff;
   background-color: #59a34d;
+}
+
+.card-link__tabletki {
+  box-shadow: 5px 5px 23px 5px rgba(89, 163, 77, 0.35);
+}
+
+.card-link__liki-24 {
+  box-shadow: 5px 5px 23px 5px rgba(0, 172, 193, 0.35);
 }
 
 .nav-mobile {
@@ -449,6 +463,13 @@ ol.gradient-list {
 .why-bifolak__count {
   font-size: 65px;
   color: #59a34d;
+}
+
+.mob-nav-item {
+  text-align: left;
+  padding: 10px;
+  color: #59a34d;
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 768px) {
