@@ -5,12 +5,24 @@
 
       <b-collapse is-nav>
         <!-- Right aligned nav items -->
-        <b-navbar-nav class="ml-auto">
-          <b-nav-item>Для кого?</b-nav-item>
-          <b-nav-item>Консультант по продукту</b-nav-item>
+        <b-navbar-nav class="ml-auto nav-desktop">
+          <b-nav-item @click="scrollToBlock('#for')">Для кого?</b-nav-item>
+          <b-nav-item @click="scrollToBlock('#buy')">Консультант по продукту</b-nav-item>
         </b-navbar-nav>
+<!--        <b-button variant="outline-secondary" v-b-toggle.sidebar-left class="nav-mobile"><b-icon icon="bars"></b-icon></b-button>-->
       </b-collapse>
     </b-navbar>
+    <div>
+      <b-sidebar id="sidebar-left" title="Sidebar" left shadow>
+        <div class="px-3 py-2">
+          <p>
+            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
+            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          </p>
+          <b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img>
+        </div>
+      </b-sidebar>
+    </div>
     <div class="mt-5 px-3 py-5">
       <div class="mb-5">
         <h2 class="green-title">
@@ -30,7 +42,7 @@
     </div>
     <div class="mt-5 px-3  py-3">
       <div class="mb-5">
-        <h2 class="green-title">
+        <h2 id="for" class="green-title">
           В житті жінки існує багато причин, через які <br> в неї можуть виникати несприятливі зміни мікрофлори піхви
         </h2>
       </div>
@@ -114,6 +126,38 @@
         </b-card>
       </b-col>
     </b-row>
+      <div class="mt-5 px-3 py-5">
+        <div class="mb-5">
+          <h2>
+            ПРИДБАТИ <span class="green-title">БІФОЛАК</span> МОЖНА ТУТ
+          </h2>
+        </div>
+        <b-container fluid>
+          <b-row class="mt-5 px-3 py-3 justify-content-between">
+            <b-col md="4" sm="12" class="flex justify-content-center mb-4">
+              <div class="card-link" @click="buyIn('https://liki24.com/uk/')">
+                <div class="light-blue-title">
+                  LIKI 24
+                </div>
+              </div>
+            </b-col>
+            <b-col md="4" sm="12" class="flex justify-content-center mb-4">
+              <div class="card-link card-link__invert" @click="buyIn('https://t.me/alexandrarebrova')">
+                <div>
+                  Заказать у поставщика
+                </div>
+              </div>
+            </b-col>
+            <b-col id="buy" md="4" sm="12" class="flex justify-content-center mb-4">
+              <div class="card-link" @click="buyIn('https://tabletki.ua/uk/')">
+                <div class="green-title">
+                  TABLETKI.UA
+                </div>
+              </div>
+            </b-col>
+          </b-row>
+        </b-container>
+      </div>
     </b-container>
   </div>
 </template>
@@ -123,6 +167,18 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  methods: {
+    buyIn(link) {
+      window.open(
+          link,
+          '_blank' // <- This is what makes it open in a new window.
+      );
+    },
+
+    scrollToBlock(id) {
+      document.querySelector(id).scrollIntoView({behavior: 'smooth', block: 'start'});
+    }
   }
 }
 </script>
@@ -218,5 +274,42 @@ ol.gradient-list {
 .green-title {
   color: rgb(89, 163, 77);
   font-weight: 600;
+}
+
+.light-blue-title {
+  color: #00acc1;
+  font-weight: 600;
+}
+
+.card-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+  font-size: 22px;
+  text-transform: uppercase;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid #e3e3e3;
+  padding: 35px 55px;
+}
+
+.card-link__invert {
+  color: #fff;
+  background-color: #59a34d;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: block;
+  }
 }
 </style>
