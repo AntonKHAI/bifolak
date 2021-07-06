@@ -7,20 +7,28 @@
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto nav-desktop">
           <b-nav-item @click="scrollToBlock('#for')">Для кого?</b-nav-item>
+          <b-nav-item @click="scrollToBlock('#for-what')">Для чого?</b-nav-item>
+          <b-nav-item @click="scrollToBlock('#why')">Чому?</b-nav-item>
           <b-nav-item @click="scrollToBlock('#buy')">Консультант по продукту</b-nav-item>
         </b-navbar-nav>
-<!--        <b-button variant="outline-secondary" v-b-toggle.sidebar-left class="nav-mobile"><b-icon icon="bars"></b-icon></b-button>-->
+        <div id="hamburger" v-b-toggle.sidebar-1 header-close class="nav-mobile" :class="{ 'open': openSidebar }" @click="toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </b-collapse>
     </b-navbar>
     <div>
-      <b-sidebar id="sidebar-left" title="Sidebar" left shadow>
-        <div class="px-3 py-2">
-          <p>
-            Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis
-            in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-          </p>
-          <b-img src="https://picsum.photos/500/500/?image=54" fluid thumbnail></b-img>
-        </div>
+      <b-sidebar id="sidebar-1" backdrop shadow @hidden="toggle">
+        <template #header>
+          Bifolak
+        </template>
+        <b-list-group class="px-2">
+          <b-list-group-item @click="scrollToBlock('#for')" class="pointer">Для кого?</b-list-group-item>
+          <b-list-group-item @click="scrollToBlock('#for-what')" class="pointer">Для чого?</b-list-group-item>
+          <b-list-group-item @click="scrollToBlock('#why')" class="pointer">Чому?</b-list-group-item>
+          <b-list-group-item @click="scrollToBlock('#buy')" class="pointer">Консультант по продукту</b-list-group-item>
+        </b-list-group>
       </b-sidebar>
     </div>
     <div class="mt-5 px-3 py-5">
@@ -67,6 +75,9 @@
       </ol>
     </div>
     <b-container fluid>
+    <h2 class="green-title" id="for-what">
+      Для чого потрібен Біфолак?
+    </h2>
     <b-row class="mt-5 px-3 py-3 justify-content-between">
       <b-col md="6" sm="12" class="flex justify-content-center mb-4">
         <b-card
@@ -126,6 +137,74 @@
         </b-card>
       </b-col>
     </b-row>
+      <div class="mt-5 px-3 py-5" id="why">
+        <div class="mb-5">
+          <h2 class="green-title">
+            Чому Біфолак?
+          </h2>
+        </div>
+        <div class="mb-5">
+          <b-container fluid>
+            <b-row class="mt-5 px-3 py-3 justify-content-between">
+              <b-col md="6" sm="12" class="flex justify-content-center mb-4">
+                <div class="why-bifolak">
+                  <div class="why-bifolak__count">
+                    1
+                  </div>
+                  <div class="why-bifolak__data">
+                    Один супозиторій містить <b>не менше 5х10 молочнокислих бактерій</b> (Lactobacillus acidophilus та Bifidobacterium)
+                  </div>
+                </div>
+              </b-col>
+              <b-col md="6" sm="12" class="flex justify-content-center mb-4">
+                <div class="why-bifolak">
+                  <div class="why-bifolak__count">
+                    2
+                  </div>
+                  <div class="why-bifolak__data">
+                    <b>Ефективна колонізація</b> -
+                    містить лактозу, аскорбінову та фолієву кислоти, які необхідні для підтримки життєдіяльності бактерій, їх кращого приживлення і зростання на поверхні слизової піхви
+                  </div>
+                </div>
+              </b-col>
+            </b-row>
+            <b-row class="mt-5 px-3 py-3 justify-content-between">
+              <b-col class="flex justify-content-center mb-4">
+                <div class="why-bifolak">
+                  <div class="why-bifolak__data">
+                    <b>Корекція мікрофлори піхви</b> <br>
+                    <span class="green-title">
+                      Тому важливо заселити мікрофлору піхви лактобактеріями щоб уникнути рецидивів
+                    </span>
+                  </div>
+                </div>
+              </b-col>
+            </b-row>
+            <b-row class="mt-5 px-3 py-3 justify-content-between">
+              <b-col md="6" sm="12" class="flex justify-content-center mb-4">
+                <div class="why-bifolak">
+                  <div class="why-bifolak__count">
+                    3
+                  </div>
+                  <div class="why-bifolak__data">
+                    <b>Короткий курс</b> - можливість швидкого відновлення балансу вагінальної мікрофлори
+                  </div>
+                </div>
+              </b-col>
+              <b-col md="6" sm="12" class="flex justify-content-center mb-4">
+                <div class="why-bifolak">
+                  <div class="why-bifolak__count">
+                    4
+                  </div>
+                  <div class="why-bifolak__data">
+                     <b>Спрямована дія</b> - одномоментне надходження високої кількості життєздатних лакто-та біфідобактерій
+                  </div>
+                </div>
+              </b-col>
+            </b-row>
+          </b-container>
+        </div>
+      </div>
       <div class="mt-5 px-3 py-5">
         <div class="mb-5">
           <h2>
@@ -168,12 +247,21 @@ export default {
   props: {
     msg: String
   },
+  data() {
+    return {
+      openSidebar: false
+    }
+  },
   methods: {
     buyIn(link) {
       window.open(
           link,
           '_blank' // <- This is what makes it open in a new window.
       );
+    },
+
+    toggle() {
+      this.openSidebar = !this.openSidebar
     },
 
     scrollToBlock(id) {
@@ -252,6 +340,54 @@ ol.gradient-list {
   }
 }
 
+#hamburger {
+  width: 35px;
+  height: 30px;
+  display: block;
+  position: relative;
+  float: right;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+#hamburger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: white;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+#hamburger span:nth-child(1) {
+  top: 0px;
+}
+#hamburger span:nth-child(2) {
+  top: 12px;
+}
+#hamburger span:nth-child(3) {
+  top: 24px;
+}
+#hamburger.open span:nth-child(1) {
+  top: 14px;
+  transform: rotate(135deg);
+}
+#hamburger.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+#hamburger.open span:nth-child(3) {
+  top: 14px;
+  transform: rotate(-135deg);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
 .flex {
   display: flex !important;
 }
@@ -300,7 +436,19 @@ ol.gradient-list {
 }
 
 .nav-mobile {
-  display: none;
+  display: none !important;
+}
+
+.why-bifolak {
+  padding: 15px;
+  border-radius: 5px;
+  max-width: 450px;
+  box-shadow: 5px 5px 23px 5px rgba(57, 94, 44, 0.23);
+}
+
+.why-bifolak__count {
+  font-size: 65px;
+  color: #59a34d;
 }
 
 @media only screen and (max-width: 768px) {
@@ -309,7 +457,7 @@ ol.gradient-list {
   }
 
   .nav-mobile {
-    display: block;
+    display: block !important;
   }
 }
 </style>
