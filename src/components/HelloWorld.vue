@@ -71,7 +71,7 @@
           </p>
         </b-col>
       </b-row>
-      <b-row class="mt-5 px-3 py-3">
+      <b-row class="px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
           <img src="../assets/clear.jpg" alt="main" style="max-width: 100%">
         </b-col>
@@ -85,7 +85,7 @@
           </p>
         </b-col>
       </b-row>
-      <b-row class="mt-5 px-3 py-3">
+      <b-row class="px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
           <img src="../assets/bull.jpg" alt="main" style="max-width: 100%">
         </b-col>
@@ -99,7 +99,7 @@
           </p>
         </b-col>
       </b-row>
-      <b-row class="mt-5 px-3 py-3">
+      <b-row class="px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
           <img src="../assets/arrow.jpg" alt="main" style="max-width: 100%">
         </b-col>
@@ -113,7 +113,7 @@
           </p>
         </b-col>
       </b-row>
-      <b-row class="mt-5 px-3 py-3">
+      <b-row class="px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
           <img src="../assets/couple.jpg" alt="main" style="max-width: 100%">
         </b-col>
@@ -126,7 +126,7 @@
           </p>
         </b-col>
       </b-row>
-      <b-row class="mt-5 px-3 py-3">
+      <b-row class="px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
           <img src="../assets/plane.jpg" alt="main" style="max-width: 100%">
         </b-col>
@@ -140,7 +140,7 @@
           </p>
         </b-col>
       </b-row>
-      <b-row class="mt-5 px-3 py-3">
+      <b-row class="px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
           <img src="../assets/stuff.jpg" alt="main" style="max-width: 100%">
         </b-col>
@@ -154,7 +154,7 @@
           </p>
         </b-col>
       </b-row>
-      <b-row class="mt-5 px-3 py-3">
+      <b-row class="px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
           <img src="../assets/women.jpg" alt="main" style="max-width: 100%">
         </b-col>
@@ -192,7 +192,7 @@
           </ul>
         </b-col>
       </b-row>
-      <b-row class="mt-5 px-3 py-3">
+      <b-row class="mt-1 px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
           <img src="../assets/fish.png" alt="main" style="max-width: 100%; max-height: 300px">
         </b-col>
@@ -204,7 +204,7 @@
           </ul>
         </b-col>
       </b-row>
-      <b-row class="mt-5 px-3 py-3">
+      <b-row class="mt-1 px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
           <img src="../assets/heart.png" alt="main" style="max-width: 100%; max-height: 300px">
         </b-col>
@@ -570,7 +570,7 @@ ol.gradient-list {
   padding: 15px;
   border-radius: 5px;
   max-width: 450px;
-  widows: 100%;
+  width: 100%;
   box-shadow: 5px 5px 23px 5px rgba(57, 94, 44, 0.23);
 }
 
@@ -587,6 +587,10 @@ ol.gradient-list {
 }
 
 @media only screen and (max-width: 768px) {
+  h2 {
+    font-size: 19px;
+  }
+
   .nav-desktop {
     display: none;
   }
