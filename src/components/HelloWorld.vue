@@ -1,15 +1,17 @@
 <template>
   <div class="main">
     <b-navbar fixed="top" class="justify-content-between">
-      <b-navbar-brand href="#">Бифолак</b-navbar-brand>
+      <b-navbar-brand href="#">
+        Бифолак
+      </b-navbar-brand>
 
       <b-collapse is-nav>
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto nav-desktop">
-          <b-nav-item @click="scrollToBlock('#for')">Для кого?</b-nav-item>
-          <b-nav-item @click="scrollToBlock('#for-what')">Для чого?</b-nav-item>
-          <b-nav-item @click="scrollToBlock('#why')">Чому?</b-nav-item>
-          <b-nav-item @click="scrollToBlock('#buy')">Консультант по продукту</b-nav-item>
+          <b-nav-item @click="scrollToBlock('#vaginal')">Вагинальный дисбиоз</b-nav-item>
+          <b-nav-item @click="scrollToBlock('#how-fix')">Как лечить?</b-nav-item>
+          <b-nav-item @click="scrollToBlock('#why')">Почему Бифолак?</b-nav-item>
+          <b-nav-item @click="scrollToBlock('#buy')">Где купить?</b-nav-item>
         </b-navbar-nav>
         <div id="hamburger" v-b-toggle.sidebar-1 header-close class="nav-mobile" :class="{ 'open': openSidebar }" @click="toggle">
           <span></span>
@@ -24,10 +26,10 @@
           Бифолак
         </template>
         <div class="px-2">
-          <div class="mob-nav-item pointer" @click="scrollToBlock('#for')">Для кого?</div>
-          <div class="mob-nav-item pointer" @click="scrollToBlock('#for-what')">Для чого?</div>
-          <div class="mob-nav-item pointer" @click="scrollToBlock('#why')">Чому?</div>
-          <div class="mob-nav-item pointer" @click="scrollToBlock('#buy')">Консультант по продукту</div>
+          <div class="mob-nav-item pointer" @click="scrollToBlock('#vaginal')">Вагинальный дисбиоз</div>
+          <div class="mob-nav-item pointer" @click="scrollToBlock('#how-fix')">Как лечить?</div>
+          <div class="mob-nav-item pointer" @click="scrollToBlock('#why')">Почему Бифолак?</div>
+          <div class="mob-nav-item pointer" @click="scrollToBlock('#buy')">Где купить?</div>
         </div>
       </b-sidebar>
     </div>
@@ -41,7 +43,7 @@
       <div class="mb-4">
         <img src="../assets/roses.jpg" alt="main" style="max-width: 100%">
       </div>
-      <p class="text-justify mb-4 px-3">
+      <p class="text-justify mb-4 px-3" id="vaginal">
         В норме во влагалище у женщины обитает так называемая нормальная микрофлора. Она состоит примерно на 90% из лактобактерий, на 10% - из бифидобактерий, и меньше 1% составляют так называемые «ключевые клетки влагалища». Нормальная микрофлора находится в постоянном равновесии между собой и с окружающей средой. Она не допускает появление никакой другой инфекции, и не допускает изменение соотношения возбудителей, живущих во влагалище в норме.
       </p>
       <div class="mt-2 mb-4 px-3">
@@ -220,7 +222,7 @@
          </ul>
         </b-col>
       </b-row>
-      <h5 class="mt-2 mb-4">
+      <h5 class="mt-2 mb-4" id="how-fix">
         Необходимо знать и помнить, что нарушенный баланс микрофлоры повышает риск развития воспалительных и инфекционных заболеваний.
       </h5>
       <div class="text-justify mt-5">
@@ -228,7 +230,7 @@
       </div>
      </b-container>
     <b-container fluid>
-      <div class="mt-3" id="why">
+      <div class="mt-3">
         <div class="mb-5">
           <div>
             <h3><span class="green-title mr-1"> 1 этап: </span>  ликвидация «плохих» Бактерий;</h3>
@@ -240,7 +242,7 @@
         </div>
       </div>
 
-      <div class="mt-5">
+      <div class="mt-5" id="why">
         <h2 class="green-title mb-5">
           БИФОЛАК – СУППОЗИТОРИИ ДЛЯ ЭФФЕКТИВНОГО ВОССТАНОВЛЕНИЯ ВАГИНАЛЬНОЙ МИКРОФЛОРЫ
         </h2>
