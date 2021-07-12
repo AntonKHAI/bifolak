@@ -171,7 +171,7 @@
          Симптомы вагинального дисбиоза
        </h2>
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
-          <img src="../assets/fish.png" alt="main" style="max-width: 100%; max-height: 300px">
+          <img src="../assets/tap.png" alt="main" style="max-width: 100%; max-height: 300px">
         </b-col>
         <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
           <ul>
@@ -189,7 +189,7 @@
       </b-row>
       <b-row class="mt-5 px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
-          <img src="../assets/tap.png" alt="main" style="max-width: 100%; max-height: 300px">
+          <img src="../assets/fish.png" alt="main" style="max-width: 100%; max-height: 300px">
         </b-col>
         <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
           <ul>
