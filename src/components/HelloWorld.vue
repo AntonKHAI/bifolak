@@ -53,6 +53,9 @@
     </div>
      <b-container fluid>
       <b-row class="mt-1 px-3 py-3">
+        <h2 class="green-title mb-4">
+          На изменение микрофлоры влияет множество факторов
+        </h2>
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
           <img src="../assets/snow.jpg" alt="main" style="max-width: 100%">
         </b-col>
