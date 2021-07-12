@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <b-navbar fixed="top" class="justify-content-between">
-      <b-navbar-brand href="#">Bifolak</b-navbar-brand>
+      <b-navbar-brand href="#">Бифолак</b-navbar-brand>
 
       <b-collapse is-nav>
         <!-- Right aligned nav items -->
@@ -21,7 +21,7 @@
     <div>
       <b-sidebar id="sidebar-1" backdrop shadow @hidden="toggle" v-if="openSidebar">
         <template #header>
-          Bifolak
+          Бифолак
         </template>
         <div class="px-2">
           <div class="mob-nav-item pointer" @click="scrollToBlock('#for')">Для кого?</div>
@@ -31,118 +31,219 @@
         </div>
       </b-sidebar>
     </div>
-    <div class="mt-5 px-3 py-5">
-      <div class="mb-5">
+    <div class="mt-5 py-5">
+      <div class="mb-4 px-3">
         <h2 class="green-title">
           БЕРЕЖНАЯ КОРРЕКЦИЯ <br>
           МИКРОФЛОРЫ ВЛАГАЛИЩА
         </h2>
       </div>
-      <div class="mb-5">
-        <h2>
-          СУПОЗИТОРІЇ ДЛЯ ЕФЕКТИВНОГО ВІДНОВЛЕННЯ <br>
-          ВАГІНАЛЬНОІ МІКРОФЛОРИ
-        </h2>
+      <div class="mb-4">
+        <img src="../assets/roses.jpg" alt="main" style="max-width: 100%">
       </div>
-      <div>
-        <img src="../assets/main.png" alt="main" style="max-width: 100%">
+      <p class="text-justify mb-4 px-3">
+        В норме во влагалище у женщины обитает так называемая нормальная микрофлора. Она состоит примерно на 90% из лактобактерий, на 10% - из бифидобактерий, и меньше 1% составляют так называемые «ключевые клетки влагалища». Нормальная микрофлора находится в постоянном равновесии между собой и с окружающей средой. Она не допускает появление никакой другой инфекции, и не допускает изменение соотношения возбудителей, живущих во влагалище в норме.
+      </p>
+      <div class="mt-2 mb-4 px-3">
+        <img src="../assets/list.jpeg" alt="main" style="max-width: 100%">
+      </div>
+      <div class="text-justify mb-4 px-3">
+        Дисбактериоз влагалища (дисбиоз) – нарушения естественной микрофлоры, которое характеризуется изменением равновесия между полезными и патогенными «обитателями» флоры. Данный процесс сопровождается снижением количества бифидо- и лактобактерий и увеличением численности возбудителя заболевания.
       </div>
     </div>
-    <div class="mt-5 px-3  py-3">
-      <div class="mb-5">
-        <h2 id="for" class="green-title">
-          В житті жінки існує багато причин, через які <br> в неї можуть виникати несприятливі зміни мікрофлори піхви
-        </h2>
-      </div>
-      <ol class="gradient-list">
-        <li><b>ЗМІНИ ГОРМОНАЛЬНОГО ФОНУ:</b> вагітність, пологи, менопауза</li>
-        <li><b>ЛІКАРСЬКІ ЗАСОБИ:</b> антибіотики, гормональні препарати та ін.</li>
-        <li><b>ГІНЕКОЛОГІЧНІ ЗАХВОРЮВАННЯ:</b> бактеріальний вагіноз, вагініт, кандидоз</li>
-      </ol>
-    </div>
-    <div class="mt-5 px-3  py-3">
-      <div class="mb-5">
+     <b-container fluid>
+      <b-row class="mt-1 px-3 py-3">
+        <b-col md="2" sm="12" class="flex justify-content-center mb-2">
+          <img src="../assets/snow.jpg" alt="main" style="max-width: 100%">
+        </b-col>
+        <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
+          <p class="text-justify">
+            <span class="green-title">
+              Переохлаждение организма
+            </span>
+            <br>
+            Как однократное сильное переохлаждение, так и постоянное замерзание. Все это ведет к снижению общего и местного иммунитета, что сказывается и на вагинальной микрофлоре.
+          </p>
+        </b-col>
+      </b-row>
+      <b-row class="mt-5 px-3 py-3">
+        <b-col md="2" sm="12" class="flex justify-content-center mb-2">
+          <img src="../assets/clear.jpg" alt="main" style="max-width: 100%">
+        </b-col>
+        <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
+          <p class="text-justify">
+            <span class="green-title">
+              Неправильное использование тампонов при месячных
+            </span>
+            <br>
+            Тампоны следует менять строго каждые 2 часа и днем, и ночью. Это достаточно неудобно, но иначе во влагалище создаются хорошие условия для роста инфекции.
+          </p>
+        </b-col>
+      </b-row>
+      <b-row class="mt-5 px-3 py-3">
+        <b-col md="2" sm="12" class="flex justify-content-center mb-2">
+          <img src="../assets/bull.jpg" alt="main" style="max-width: 100%">
+        </b-col>
+        <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
+          <p class="text-justify">
+            <span class="green-title">
+             Изменения и нарушения гормонального фона
+            </span>
+            <br>
+           Сюда можно отнести нерегулярную половую жизнь, беременность, роды, аборты, любые виды нарушений цикла, половое созревание, предклимакс и климакс и т.д.
+          </p>
+        </b-col>
+      </b-row>
+      <b-row class="mt-5 px-3 py-3">
+        <b-col md="2" sm="12" class="flex justify-content-center mb-2">
+          <img src="../assets/arrow.jpg" alt="main" style="max-width: 100%">
+        </b-col>
+        <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
+          <p class="text-justify">
+            <span class="green-title">
+              Инфекционно-воспалительные заболевания
+            </span>
+            <br>
+            Любые инфекционно-воспалительные заболевания органов малого таза, инфекции передающиеся половым путем.
+          </p>
+        </b-col>
+      </b-row>
+      <b-row class="mt-5 px-3 py-3">
+        <b-col md="2" sm="12" class="flex justify-content-center mb-2">
+          <img src="../assets/couple.jpg" alt="main" style="max-width: 100%">
+        </b-col>
+        <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
+          <p class="text-justify">
+            <span class="green-title">
+             Беспорядочная половая жизнь
+            </span>
+            <br>Большое количество половых партнеров, пренебрежение средствами контрацепции.
+          </p>
+        </b-col>
+      </b-row>
+      <b-row class="mt-5 px-3 py-3">
+        <b-col md="2" sm="12" class="flex justify-content-center mb-2">
+          <img src="../assets/plane.jpg" alt="main" style="max-width: 100%">
+        </b-col>
+        <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
+          <p class="text-justify">
+            <span class="green-title">
+              Смена климатической зоны
+            </span>
+            <br>
+            Случаются обострения дисбиоза влагалища во время поездок в теплые страны.
+          </p>
+        </b-col>
+      </b-row>
+      <b-row class="mt-5 px-3 py-3">
+        <b-col md="2" sm="12" class="flex justify-content-center mb-2">
+          <img src="../assets/stuff.jpg" alt="main" style="max-width: 100%">
+        </b-col>
+        <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
+          <p class="text-justify">
+            <span class="green-title">
+              Лекарственные препараты
+            </span>
+            <br>
+            Лечение антибиотиками, особенно продолжительное или многократное.
+          </p>
+        </b-col>
+      </b-row>
+      <b-row class="mt-5 px-3 py-3">
+        <b-col md="2" sm="12" class="flex justify-content-center mb-2">
+          <img src="../assets/women.jpg" alt="main" style="max-width: 100%">
+        </b-col>
+        <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
+          <p class="text-justify">
+            <span class="green-title">
+              Инфекционно-воспалительные заболевания
+            </span>
+            <br>
+            Любые инфекционно-воспалительные заболевания органов малого таза, инфекции передающиеся половым путем.
+          </p>
+        </b-col>
+      </b-row>
+     </b-container>
+     <div>
+       <b-container fluid>
+      <b-row class="mt-1 px-3 py-3">
         <h2 class="green-title">
-          Зачем нужны вагинальные пробиотики
-        </h2>
+         Симптомы вагинального дисбиоза
+       </h2>
+        <b-col md="2" sm="12" class="flex justify-content-center mb-2">
+          <img src="../assets/fish.png" alt="main" style="max-width: 100%; max-height: 300px">
+        </b-col>
+        <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
+          <ul>
+            <li class="mb-1 text-justify">
+              обильные выделения (бели): до 20-30 мл в сутки;
+            </li>
+            <li class="mb-1 text-justify">
+              при длительном течении бели становятся липкими и пенистыми;
+            </li>
+            <li class="mb-1 text-justify">
+              первоначально бели сероватого цвета, с развитием патологического состояния цвет становится желтовато-зеленый;
+            </li>
+          </ul>
+        </b-col>
+      </b-row>
+      <b-row class="mt-5 px-3 py-3">
+        <b-col md="2" sm="12" class="flex justify-content-center mb-2">
+          <img src="../assets/tap.png" alt="main" style="max-width: 100%; max-height: 300px">
+        </b-col>
+        <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
+          <ul>
+            <li class="mb-1 text-justify">
+              выделения имеют неприятный (рыбный) запах, который усиливается после полового акта и во время месячных;
+            </li>
+          </ul>
+        </b-col>
+      </b-row>
+      <b-row class="mt-5 px-3 py-3">
+        <b-col md="2" sm="12" class="flex justify-content-center mb-2">
+          <img src="../assets/heart.png" alt="main" style="max-width: 100%; max-height: 300px">
+        </b-col>
+        <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
+         <ul>
+           <li class="mb-1 text-justify">
+            зуд и жжение во влагалище;
+           </li>
+           <li class="mb-1 text-justify">
+            дизурические расстройства;
+           </li>
+           <li class="mb-1 text-justify">
+            болезненность при половом акте;
+           </li>
+         </ul>
+        </b-col>
+      </b-row>
+      <h5 class="mt-2 mb-4">
+        Необходимо знать и помнить, что нарушенный баланс микрофлоры повышает риск развития воспалительных и инфекционных заболеваний.
+      </h5>
+      <div class="text-justify mt-5">
+        Основные принципы лечения дисбиоза влагалища направлены на подавление роста болезнетворных и условно-патогенных бактерий с последующим восстановлением численности лактобактерий. Поэтому лечение женщин с бактериальным вагинозом рекомендуется проводить в два этапа:
       </div>
-      <ol class="gradient-list">
-        <li>Рекомендується жінкам з проявами вагінозів та вагінітів різної етиології (кандидозних, бактеріальних, трихомонадних)</li>
-        <li>При призначенні антибактеріальної, гормональної та інших видах терапії, що можуть призводити до порушення мікрофлори піхви</li>
-        <li>При дизбіозі піхви у вагітних з метою підвищення якості життя цієї категорії жінок</li>
-        <li>Вживають як джерело життєздатних лактобактерій з метою відновлення та збереження біоплівки, що запобігає заселенню піхви патогенною флорою</li>
-        <li>Вживають як джерело лакто- та біфідобактерій з метою стимулювання імунної системи</li>
-      </ol>
-    </div>
+     </b-container>
     <b-container fluid>
-    <h2 class="green-title" id="for-what">
-      Для чого потрібен Біфолак?
-    </h2>
-    <b-row class="mt-5 px-3 py-3 justify-content-between">
-      <b-col md="6" sm="12" class="flex justify-content-center mb-4">
-        <b-card
-          img-src="https://onclinic.ua/storage/media/articles/331/SwHBEBwYqgaynnsmyZ8rExh0pMmRKby9UXp11gBJ.jpg"
-          img-alt="Image"
-          img-top
-          tag="article"
-          style="max-width: 35rem;"
-          class="mb-2"
-        >
-          <b-card-text>
-            Лечение и профилактика
-            вагинальных дисбиозов
-          </b-card-text>
-        </b-card>
-      </b-col><b-col md="6" sm="12" class="flex justify-content-center mb-4">
-        <b-card
-          img-src="https://ginokomfort.ru/upload/medialibrary/086/x0868ca29e7272cc29750e87588a14cb5.jpg.pagespeed.ic.d_tHlY-EzZ.jpg"
-          img-alt="Image"
-          img-top
-          tag="article"
-          style="max-width: 35rem;"
-          class="mb-2"
-        >
-          <b-card-text>
-            Комплексное лечение:
-            острых, подострых, хронических вульвитов и вагинитов, постменопаузального атрофического вагинита, бактериального вагиноза
-          </b-card-text>
-        </b-card>
-      </b-col><b-col md="6" sm="12" class="flex justify-content-center mb-4">
-        <b-card
-          img-src="https://lh3.googleusercontent.com/proxy/3p1iWxX8TEF6S-TNFqhfcz7LcsWNXDw16R6fu13e3nxlRd3baN7A5WFWS9OyEkMjE5mOpfJcHQCcvd3LK9wRNtumtsA0uQNHto4IT_bW616DNcSrzA"
-          img-alt="Image"
-          img-top
-          tag="article"
-          style="max-width: 35rem;"
-          class="mb-2"
-        >
-          <b-card-text>
-            Профилактика:
-            послеоперационных инфекционных осложнений,
-            дисбиотических изменений урогенитального тракта на фоне антибактериальной терапии
-          </b-card-text>
-        </b-card>
-      </b-col><b-col md="6" sm="12" class="flex justify-content-center mb-4">
-        <b-card
-          img-src="https://uni-center.com/upload/medialibrary/468/4685a9569dbb75ef66fb88004463319c.jpg"
-          img-alt="Image"
-          img-top
-          tag="article"
-          style="max-width: 35rem;"
-          class="mb-2"
-        >
-          <b-card-text>
-            Предродовая подготовка беременных женщин, входящих в группу риска в отношении воспалительных заболеваний
-          </b-card-text>
-        </b-card>
-      </b-col>
-    </b-row>
       <div class="mt-3" id="why">
         <div class="mb-5">
-          <h2 class="green-title">
-            Чому Біфолак?
-          </h2>
+          <div>
+            <h3><span class="green-title mr-1"> 1 этап: </span>  ликвидация «плохих» Бактерий;</h3>
+            <h3><span class="green-title mr-1"> 2 этап: </span>  восстановление численного количества лактобактерий.</h3>
+          </div>
         </div>
+        <div class="text-justify">
+          Необходимость второго этапа обусловлена тем, что антимикробные средства помимо подавления роста болезнетворных бактерий оказывают также отрицательное значение и на численность лактобактерий, обеспечивающих в норме защитную функцию. Поэтому для скорейшего обеспечения их численного превосходства в экосистеме половых путей специалисты рекомендуют курсовое применение специальных «женских» пробиотиков.
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <h2 class="green-title mb-5">
+          БИФОЛАК – СУППОЗИТОРИИ ДЛЯ ЭФФЕКТИВНОГО ВОССТАНОВЛЕНИЯ ВАГИНАЛЬНОЙ МИКРОФЛОРЫ
+        </h2>
+        <h2 class="green-title mb-5">
+          ПОЧЕМУ БИФОЛАК ?
+        </h2>
         <div class="mb-5">
           <b-container fluid>
             <b-row class="mt-3 justify-content-between">
@@ -152,7 +253,7 @@
                     1
                   </div>
                   <div class="why-bifolak__data">
-                    Один супозиторій містить <b>не менше 5х10 молочнокислих бактерій</b> (Lactobacillus acidophilus та Bifidobacterium)
+                    Один суппозиторий содержит <b>не меньше 5х10 молочнокислих бактерий</b> (Lactobacillus acidophilus та Bifidobacterium)
                   </div>
                 </div>
               </b-col>
@@ -162,8 +263,8 @@
                     2
                   </div>
                   <div class="why-bifolak__data">
-                    <b>Ефективна колонізація</b> -
-                    містить лактозу, аскорбінову та фолієву кислоти, які необхідні для підтримки життєдіяльності бактерій, їх кращого приживлення і зростання на поверхні слизової піхви
+                    <b>Эффективная коллонизация</b> -
+                    Содержит лактозу, аскорбиновую и фолиевую кислоты, которые необходимы для поддержания жизнедеятельности бактерий, их лучшего прикрепления и размножения на слизистой влагалища
                   </div>
                 </div>
               </b-col>
@@ -172,9 +273,9 @@
               <b-col class="flex justify-content-center mb-4">
                 <div class="why-bifolak">
                   <div class="why-bifolak__data">
-                    <b>Корекція мікрофлори піхви</b> <br>
+                    <b>Коррекция микрофлоры влагалища</b> <br>
                     <span class="green-title">
-                      Тому важливо заселити мікрофлору піхви лактобактеріями щоб уникнути рецидивів
+                      Важно заселить микрофлору влагалища лактобактериями для предупреждения рецидивов инфекционно-воспалительных процессов
                     </span>
                   </div>
                 </div>
@@ -187,7 +288,7 @@
                     3
                   </div>
                   <div class="why-bifolak__data">
-                    <b>Короткий курс</b> - можливість швидкого відновлення балансу вагінальної мікрофлори
+                    <b>Короткий курс</b> - Возможность быстрого восстановления микрофлоры влагалища
                   </div>
                 </div>
               </b-col>
@@ -197,7 +298,7 @@
                     4
                   </div>
                   <div class="why-bifolak__data">
-                     <b>Спрямована дія</b> - одномоментне надходження високої кількості життєздатних лакто-та біфідобактерій
+                     <b>Направленное действие</b> - Одномоментное поступление большого количества жизнеспособних лакто- и бифидобактерий
                   </div>
                 </div>
               </b-col>
@@ -205,10 +306,12 @@
           </b-container>
         </div>
       </div>
+
       <div class="px-3 py-5">
         <div class="mb-5">
           <h2>
-            ПРИДБАТИ <span class="green-title">БІФОЛАК</span> МОЖНА ТУТ
+            ПРИОБРЕСТИ <span class="green-title">БИФОЛАК</span> МОЖНО СДЕСЬ
+
           </h2>
         </div>
         <b-container fluid>
@@ -242,6 +345,7 @@
         </b-container>
       </div>
     </b-container>
+    </div>
   </div>
 </template>
 
@@ -393,6 +497,10 @@ ol.gradient-list {
   cursor: pointer;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .flex {
   display: flex !important;
 }
@@ -457,6 +565,7 @@ ol.gradient-list {
   padding: 15px;
   border-radius: 5px;
   max-width: 450px;
+  widows: 100%;
   box-shadow: 5px 5px 23px 5px rgba(57, 94, 44, 0.23);
 }
 
