@@ -249,67 +249,77 @@
         <h2 class="green-title mb-5">
           ПОЧЕМУ БИФОЛАК ?
         </h2>
-        <div class="mb-5">
-          <b-container fluid>
-            <b-row class="mt-3 justify-content-between">
-              <b-col md="6" sm="12" class="flex justify-content-center mb-4">
-                <div class="why-bifolak">
-                  <div class="why-bifolak__count">
-                    1
-                  </div>
-                  <div class="why-bifolak__data">
-                    Один суппозиторий содержит <b>не меньше 5х10 молочнокислих бактерий</b> (Lactobacillus acidophilus та Bifidobacterium)
-                  </div>
-                </div>
-              </b-col>
-              <b-col md="6" sm="12" class="flex justify-content-center mb-4">
-                <div class="why-bifolak">
-                  <div class="why-bifolak__count">
-                    2
-                  </div>
-                  <div class="why-bifolak__data">
-                    <b>Эффективная коллонизация</b> -
-                    Содержит лактозу, аскорбиновую и фолиевую кислоты, которые необходимы для поддержания жизнедеятельности бактерий, их лучшего прикрепления и размножения на слизистой влагалища
-                  </div>
-                </div>
-              </b-col>
-            </b-row>
-            <b-row class="mt-3 justify-content-between">
-              <b-col class="flex justify-content-center mb-4">
-                <div class="why-bifolak">
-                  <div class="why-bifolak__data">
-                    <b>Коррекция микрофлоры влагалища</b> <br>
-                    <span class="green-title">
-                      Важно заселить микрофлору влагалища лактобактериями для предупреждения рецидивов инфекционно-воспалительных процессов
-                    </span>
-                  </div>
-                </div>
-              </b-col>
-            </b-row>
-            <b-row class="mt-3 justify-content-between">
-              <b-col md="6" sm="12" class="flex justify-content-center mb-4">
-                <div class="why-bifolak">
-                  <div class="why-bifolak__count">
-                    3
-                  </div>
-                  <div class="why-bifolak__data">
-                    <b>Короткий курс</b> - Возможность быстрого восстановления микрофлоры влагалища
-                  </div>
-                </div>
-              </b-col>
-              <b-col md="6" sm="12" class="flex justify-content-center mb-4">
-                <div class="why-bifolak">
-                  <div class="why-bifolak__count">
-                    4
-                  </div>
-                  <div class="why-bifolak__data">
-                     <b>Направленное действие</b> - Одномоментное поступление большого количества жизнеспособних лакто- и бифидобактерий
-                  </div>
-                </div>
-              </b-col>
-            </b-row>
-          </b-container>
+        <div>
+          <VueSlickCarousel v-bind="settings">
+            <div><img src="../assets/1slide.jpg" alt="" class="slide-img"></div>
+            <div><img src="../assets/2slide.jpg" alt="" class="slide-img"></div>
+            <div><img src="../assets/3slide.jpg" alt="" class="slide-img"></div>
+            <div><img src="../assets/4slide.jpg" alt="" class="slide-img"></div>
+            <div><img src="../assets/5slide.jpg" alt="" class="slide-img"></div>
+            <div><img src="../assets/6slide.jpg" alt="" class="slide-img"></div>
+          </VueSlickCarousel>
         </div>
+<!--        <div class="mb-5">-->
+<!--          <b-container fluid>-->
+<!--            <b-row class="mt-3 justify-content-between">-->
+<!--              <b-col md="6" sm="12" class="flex justify-content-center mb-4">-->
+<!--                <div class="why-bifolak">-->
+<!--                  <div class="why-bifolak__count">-->
+<!--                    1-->
+<!--                  </div>-->
+<!--                  <div class="why-bifolak__data">-->
+<!--                    Один суппозиторий содержит <b>не меньше 5х10 молочнокислих бактерий</b> (Lactobacillus acidophilus та Bifidobacterium)-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </b-col>-->
+<!--              <b-col md="6" sm="12" class="flex justify-content-center mb-4">-->
+<!--                <div class="why-bifolak">-->
+<!--                  <div class="why-bifolak__count">-->
+<!--                    2-->
+<!--                  </div>-->
+<!--                  <div class="why-bifolak__data">-->
+<!--                    <b>Эффективная коллонизация</b> - -->
+<!--                    Содержит лактозу, аскорбиновую и фолиевую кислоты, которые необходимы для поддержания жизнедеятельности бактерий, их лучшего прикрепления и размножения на слизистой влагалища-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </b-col>-->
+<!--            </b-row>-->
+<!--            <b-row class="mt-3 justify-content-between">-->
+<!--              <b-col class="flex justify-content-center mb-4">-->
+<!--                <div class="why-bifolak">-->
+<!--                  <div class="why-bifolak__data">-->
+<!--                    <b>Коррекция микрофлоры влагалища</b> <br>-->
+<!--                    <span class="green-title">-->
+<!--                      Важно заселить микрофлору влагалища лактобактериями для предупреждения рецидивов инфекционно-воспалительных процессов-->
+<!--                    </span>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </b-col>-->
+<!--            </b-row>-->
+<!--            <b-row class="mt-3 justify-content-between">-->
+<!--              <b-col md="6" sm="12" class="flex justify-content-center mb-4">-->
+<!--                <div class="why-bifolak">-->
+<!--                  <div class="why-bifolak__count">-->
+<!--                    3-->
+<!--                  </div>-->
+<!--                  <div class="why-bifolak__data">-->
+<!--                    <b>Короткий курс</b> - Возможность быстрого восстановления микрофлоры влагалища-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </b-col>-->
+<!--              <b-col md="6" sm="12" class="flex justify-content-center mb-4">-->
+<!--                <div class="why-bifolak">-->
+<!--                  <div class="why-bifolak__count">-->
+<!--                    4-->
+<!--                  </div>-->
+<!--                  <div class="why-bifolak__data">-->
+<!--                     <b>Направленное действие</b> - Одномоментное поступление большого количества жизнеспособних лакто- и бифидобактерий-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </b-col>-->
+<!--            </b-row>-->
+<!--          </b-container>-->
+<!--        </div>-->
       </div>
 
       <div class="px-3 py-5">
@@ -355,14 +365,56 @@
 </template>
 
 <script>
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+// optional style for arrows & dots
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+
 export default {
   name: 'HelloWorld',
+  components: {
+    VueSlickCarousel
+  },
   props: {
     msg: String
   },
   data() {
     return {
-      openSidebar: false
+      openSidebar: false,
+      settings: {
+        "dots": true,
+        "infinite": false,
+        "speed": 500,
+        "slidesToShow": 2,
+        "slidesToScroll": 2,
+        "initialSlide": 0,
+        "responsive": [
+          {
+            "breakpoint": 1024,
+            "settings": {
+              "slidesToShow": 3,
+              "slidesToScroll": 3,
+              "infinite": true,
+              "dots": true
+            }
+          },
+          {
+            "breakpoint": 600,
+            "settings": {
+              "slidesToShow": 2,
+              "slidesToScroll": 2,
+              "initialSlide": 2
+            }
+          },
+          {
+            "breakpoint": 480,
+            "settings": {
+              "slidesToShow": 1,
+              "slidesToScroll": 1
+            }
+          }
+        ]
+      }
     }
   },
   methods: {
@@ -584,6 +636,10 @@ ol.gradient-list {
   padding: 10px;
   color: #59a34d;
   font-weight: 600;
+}
+
+.slick-slide img {
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
