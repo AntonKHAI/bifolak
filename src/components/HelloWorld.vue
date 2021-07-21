@@ -11,6 +11,7 @@
           <b-nav-item @click="scrollToBlock('#vaginal')">Вагинальный дисбиоз</b-nav-item>
           <b-nav-item @click="scrollToBlock('#how-fix')">Как лечить?</b-nav-item>
           <b-nav-item @click="scrollToBlock('#why')">Почему Бифолак?</b-nav-item>
+          <b-nav-item @click="scrollToBlock('#how-use')">Как использоавть Бифолак?</b-nav-item>
           <b-nav-item @click="scrollToBlock('#buy')">Где купить?</b-nav-item>
         </b-navbar-nav>
         <div id="hamburger" v-b-toggle.sidebar-1 header-close class="nav-mobile" :class="{ 'open': openSidebar }" @click="toggle">
@@ -29,6 +30,7 @@
           <div class="mob-nav-item pointer" @click="scrollToBlock('#vaginal')">Вагинальный дисбиоз</div>
           <div class="mob-nav-item pointer" @click="scrollToBlock('#how-fix')">Как лечить?</div>
           <div class="mob-nav-item pointer" @click="scrollToBlock('#why')">Почему Бифолак?</div>
+          <div class="mob-nav-item pointer" @click="scrollToBlock('#how-use')">Как использоавть Бифолак?</div>
           <div class="mob-nav-item pointer" @click="scrollToBlock('#buy')">Где купить?</div>
         </div>
       </b-sidebar>
@@ -321,12 +323,35 @@
 <!--          </b-container>-->
 <!--        </div>-->
       </div>
+      <b-container fluid>
+        <div class="mt-5" id="how-use">
+          <h2 class="green-title mb-5">
+            Как использовать Бифолак?
+          </h2>
+          <h4>
+            Вводите суппозитории на ночь.
+          </h4>
+          <img src="../assets/how-use2.png" alt="" style="max-width: 100%">
+          <h5 class="mb-2">
+            Суппозитории растворяются во влагалище и могут вытекать вместе с выделениями, поэтому их лучше всего вводить перед сном.
+          </h5>
 
+          <ol class="gradient-list">
+            <li>Посетите туалет и сделайте гигиенические процедуры без использования мыла и других моющих средств, только водой.</li>
+            <li>Манипуляции проводятся руками, так что тщательно их вымойте или воспользуйтесь напальчником или перчаткой.</li>
+            <li>Оторвите или отрежьте упаковку с одним суппозиторием.</li>
+            <li>Чтобы раскрыть упаковку, со стороны острого конца свечи потяните за «ушки» в разные стороны. Упаковка отрывается очень легко!</li>
+            <li>Принять лежачее положение и пальцем ввести свечу, как можно глубже, во влагалище.</li>
+            <img src="../assets/how-use1.jpg" alt="" style="max-width: 100%">
+            <li>На этом все. В течение получаса нежелательно вставать, чтобы свеча успела растаять во влагалище. После введения суппозиторий используйте обычную или ежедневную прокладку, чтобы собрать выделения.</li>
+            <img src="../assets/how-use3.jpeg" alt="" style="max-width: 100%">
+          </ol>
+        </div>
+      </b-container>
       <div class="px-3 py-5">
         <div class="mb-5">
           <h2>
             ПРИОБРЕСТИ <span class="green-title">БИФОЛАК</span> МОЖНО СДЕСЬ
-
           </h2>
         </div>
         <b-container fluid>
@@ -347,13 +372,39 @@
             </b-col>
           </b-row>
         </b-container>
+<!--        <b-container fluid>-->
+<!--          <b-row class="mt-5 px-3 py-3 justify-content-between">-->
+<!--            <b-col class="flex justify-content-center mb-4">-->
+<!--              <div class="card-link card-link__invert" @click="buyIn('https://t.me/alexandrarebrova')">-->
+<!--                <div>-->
+<!--                  Консультант по продукту-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </b-col>-->
+<!--          </b-row>-->
+<!--        </b-container>-->
         <b-container fluid>
-          <b-row class="mt-5 px-3 py-3 justify-content-between">
+          <b-row class="mb-5 flex-column px-3 py-3 justify-content-between">
             <b-col class="flex justify-content-center mb-4">
-              <div class="card-link card-link__invert" @click="buyIn('https://t.me/alexandrarebrova')">
-                <div>
-                  Консультант по продукту
-                </div>
+              <vSelect
+                  style="width: 300px"
+                  v-model="consultant"
+                  label="place"
+                  placeholder="Выберите город"
+                  :clearable="false"
+                  :filterable="false"
+                  :options="options"
+                  :searchable="false"
+              />
+            </b-col>
+            <b-col v-if="consultant" class="flex justify-content-center mb-4">
+              <a :href="`tel:${consultant.phone}`" type="tel">
+                {{consultant.phone}}
+              </a>
+            </b-col>
+            <b-col v-if="consultant" class="flex justify-content-center mb-4">
+              <div class="card-link__telegram" @click="buyIn(`https://t.me/${consultant.nick}`)">
+                  Связаться через Telegram
               </div>
             </b-col>
           </b-row>
@@ -370,10 +421,13 @@ import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 // optional style for arrows & dots
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
+import vSelect from 'vue-select'
+
 export default {
   name: 'HelloWorld',
   components: {
-    VueSlickCarousel
+    VueSlickCarousel,
+    vSelect
   },
   props: {
     msg: String
@@ -381,6 +435,39 @@ export default {
   data() {
     return {
       openSidebar: false,
+      consultant: null,
+      options: [
+        {
+          phone: '0 (66) 770 90 94',
+          place: 'Киев',
+          nick: 'nik_lek'
+        },
+        {
+          phone: '0 (50) 468 85 76',
+          place: 'Днепр',
+          nick: 'YevgeniyVdn'
+        },
+        {
+          phone: '0 (99) 945 82 96',
+          place: 'Запорожье',
+          nick: 'kostyayasen'
+        },
+        {
+          phone: '0 (99) 028 21 79',
+          place: 'Николаев',
+          nick: 'mariiasolovyova'
+        },
+        {
+          phone: '0 (99) 316 26 60',
+          place: 'Херсон',
+          nick: 'Vadimdymchenko'
+        },
+        {
+          phone: '0 (95) 893 59 16',
+          place: 'Харьков',
+          nick: 'alexandrarebrova'
+        },
+      ],
       settings: {
         "dots": true,
         "infinite": false,
@@ -601,6 +688,13 @@ ol.gradient-list {
   padding: 20px;
 }
 
+.card-link__telegram {
+  padding: 5px;
+  border: 1px solid #0088CC;
+  border-radius: 3px;
+  color: #0088CC;
+}
+
 .card-link__invert {
   color: #fff;
   background-color: #59a34d;
@@ -640,6 +734,41 @@ ol.gradient-list {
 
 .slick-slide img {
   max-width: 100%;
+}
+
+.v-select {
+  border-radius: 3px;
+}
+
+.vs__dropdown-toggle {
+  border-radius: 3px;
+  border-color: #e3e3e3 !important;
+  min-height: 40px;
+  padding: 0 8px 4px !important;
+  font-size: 14px;
+}
+
+.vs__deselect {
+  fill: rgba(0,0,0,0.6);
+}
+
+.vs__dropdown-menu {
+  background: #e3e3e3 !important;
+}
+
+.vs__dropdown-menu {
+  background: #fff !important;
+  font-weight: 500;
+  max-height: 200px !important;
+}
+
+.vs__dropdown-option--selected {
+  color: #59a34d !important;
+}
+
+.vs__dropdown-option--highlight {
+  background: #e3e3e3 !important;
+  color: #333 !important;
 }
 
 @media only screen and (max-width: 768px) {
