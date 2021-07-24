@@ -251,7 +251,7 @@
         <h2 class="green-title mb-5">
           ПОЧЕМУ БИФОЛАК ?
         </h2>
-        <div>
+        <div class="slide-wrap">
           <VueSlickCarousel v-bind="settings">
             <div><img src="../assets/1slide.jpg" alt="" class="slide-img"></div>
             <div><img src="../assets/2slide.jpg" alt="" class="slide-img"></div>
@@ -477,6 +477,7 @@ export default {
       settings: {
         "dots": true,
         "infinite": false,
+        arrows: true,
         "speed": 500,
         "slidesToShow": 2,
         "slidesToScroll": 2,
@@ -643,6 +644,15 @@ ol.gradient-list {
   transform: rotate(-135deg);
 }
 
+.slide-wrap {
+  padding: 30px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family:initial!important;
+    color:red;
+}
 .pointer {
   cursor: pointer;
 }

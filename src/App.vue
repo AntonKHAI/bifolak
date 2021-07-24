@@ -12,4 +12,16 @@
   text-align: center;
   color: #2c3e50;
 }
+
+.slick-prev:before {
+  content: "<";
+  color: brown !important;
+  font-size: 30px;
+}
+
+.slick-next:before {
+  content: ">";
+  color: brown !important;
+  font-size: 30px;
+}
 </style>
