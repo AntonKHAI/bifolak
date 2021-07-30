@@ -56,7 +56,7 @@
       </div>
     </div>
      <b-container fluid>
-      <b-row class="mt-1 px-3 py-3">
+      <b-row data-aos="zoom-in-down" class="mt-1 px-3 py-3">
         <h2 class="green-title mb-4">
           На изменение микрофлоры влияет множество факторов
         </h2>
@@ -73,7 +73,7 @@
           </p>
         </b-col>
       </b-row>
-      <b-row class="px-3 py-3">
+      <b-row data-aos="zoom-in-down" class="px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
           <img src="../assets/clear.jpg" alt="main" style="max-width: 100%">
         </b-col>
@@ -87,7 +87,7 @@
           </p>
         </b-col>
       </b-row>
-      <b-row class="px-3 py-3">
+      <b-row data-aos="zoom-in-down" class="px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
           <img src="../assets/bull.jpg" alt="main" style="max-width: 100%">
         </b-col>
@@ -101,7 +101,7 @@
           </p>
         </b-col>
       </b-row>
-      <b-row class="px-3 py-3">
+      <b-row data-aos="zoom-in-down" class="px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
           <img src="../assets/arrow.jpg" alt="main" style="max-width: 100%">
         </b-col>
@@ -115,7 +115,7 @@
           </p>
         </b-col>
       </b-row>
-      <b-row class="px-3 py-3">
+      <b-row data-aos="zoom-in-down" class="px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
           <img src="../assets/couple.jpg" alt="main" style="max-width: 100%">
         </b-col>
@@ -128,7 +128,7 @@
           </p>
         </b-col>
       </b-row>
-      <b-row class="px-3 py-3">
+      <b-row data-aos="zoom-in-down" class="px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
           <img src="../assets/plane.jpg" alt="main" style="max-width: 100%">
         </b-col>
@@ -142,7 +142,7 @@
           </p>
         </b-col>
       </b-row>
-      <b-row class="px-3 py-3">
+      <b-row data-aos="zoom-in-down" class="px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
           <img src="../assets/stuff.jpg" alt="main" style="max-width: 100%">
         </b-col>
@@ -156,7 +156,7 @@
           </p>
         </b-col>
       </b-row>
-      <b-row class="px-3 py-3">
+      <b-row data-aos="zoom-in-down" class="px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
           <img src="../assets/women.jpg" alt="main" style="max-width: 100%">
         </b-col>
@@ -173,7 +173,7 @@
      </b-container>
      <div>
        <b-container fluid>
-      <b-row class="mt-1 px-3 py-3">
+      <b-row data-aos="zoom-in-down" class="mt-1 px-3 py-3">
         <h2 class="green-title">
          Симптомы вагинального дисбиоза
        </h2>
@@ -194,7 +194,7 @@
           </ul>
         </b-col>
       </b-row>
-      <b-row class="mt-1 px-3 py-3">
+      <b-row data-aos="zoom-in-down" class="mt-1 px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
           <img src="../assets/fish.png" alt="main" style="max-width: 100%; max-height: 300px">
         </b-col>
@@ -206,7 +206,7 @@
           </ul>
         </b-col>
       </b-row>
-      <b-row class="mt-1 px-3 py-3">
+      <b-row data-aos="zoom-in-down" class="mt-1 px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
           <img src="../assets/heart.png" alt="main" style="max-width: 100%; max-height: 300px">
         </b-col>
@@ -224,22 +224,23 @@
          </ul>
         </b-col>
       </b-row>
-      <h5 class="mt-2 mb-4" id="how-fix">
+      <h5 data-aos="zoom-out-up" class="mt-2 mb-4" id="how-fix">
         Необходимо знать и помнить, что нарушенный баланс микрофлоры повышает риск развития воспалительных и инфекционных заболеваний.
       </h5>
-      <div class="text-justify mt-5">
+      <div data-aos="zoom-out-up" class="text-justify mt-5">
         Основные принципы лечения дисбиоза влагалища направлены на подавление роста болезнетворных и условно-патогенных бактерий с последующим восстановлением численности лактобактерий. Поэтому лечение женщин с бактериальным вагинозом рекомендуется проводить в два этапа:
       </div>
      </b-container>
     <b-container fluid>
       <div class="mt-3">
         <div class="mb-5">
-          <div>
+          <div data-aos="zoom-out-up">
             <h3><span class="green-title mr-1"> 1 этап: </span>  ликвидация «плохих» Бактерий;</h3>
             <h3><span class="green-title mr-1"> 2 этап: </span>  восстановление численного количества лактобактерий.</h3>
+            <img src="../assets/bio.jpg" alt="" style="max-width: 100%">
           </div>
         </div>
-        <div class="text-justify">
+        <div data-aos="zoom-out-up" class="text-justify">
           Необходимость второго этапа обусловлена тем, что антимикробные средства помимо подавления роста болезнетворных бактерий оказывают также отрицательное значение и на численность лактобактерий, обеспечивающих в норме защитную функцию. Поэтому для скорейшего обеспечения их численного превосходства в экосистеме половых путей специалисты рекомендуют курсовое применение специальных «женских» пробиотиков.
         </div>
       </div>
@@ -251,7 +252,7 @@
         <h2 class="green-title mb-5">
           ПОЧЕМУ БИФОЛАК ?
         </h2>
-        <div class="slide-wrap">
+        <div data-aos="zoom-out-up" class="slide-wrap">
           <VueSlickCarousel v-bind="settings">
             <div><img src="../assets/1slide.jpg" alt="" class="slide-img"></div>
             <div><img src="../assets/2slide.jpg" alt="" class="slide-img"></div>
@@ -261,70 +262,9 @@
             <div><img src="../assets/6slide.jpg" alt="" class="slide-img"></div>
           </VueSlickCarousel>
         </div>
-<!--        <div class="mb-5">-->
-<!--          <b-container fluid>-->
-<!--            <b-row class="mt-3 justify-content-between">-->
-<!--              <b-col md="6" sm="12" class="flex justify-content-center mb-4">-->
-<!--                <div class="why-bifolak">-->
-<!--                  <div class="why-bifolak__count">-->
-<!--                    1-->
-<!--                  </div>-->
-<!--                  <div class="why-bifolak__data">-->
-<!--                    Один суппозиторий содержит <b>не меньше 5х10 молочнокислих бактерий</b> (Lactobacillus acidophilus та Bifidobacterium)-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </b-col>-->
-<!--              <b-col md="6" sm="12" class="flex justify-content-center mb-4">-->
-<!--                <div class="why-bifolak">-->
-<!--                  <div class="why-bifolak__count">-->
-<!--                    2-->
-<!--                  </div>-->
-<!--                  <div class="why-bifolak__data">-->
-<!--                    <b>Эффективная коллонизация</b> - -->
-<!--                    Содержит лактозу, аскорбиновую и фолиевую кислоты, которые необходимы для поддержания жизнедеятельности бактерий, их лучшего прикрепления и размножения на слизистой влагалища-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </b-col>-->
-<!--            </b-row>-->
-<!--            <b-row class="mt-3 justify-content-between">-->
-<!--              <b-col class="flex justify-content-center mb-4">-->
-<!--                <div class="why-bifolak">-->
-<!--                  <div class="why-bifolak__data">-->
-<!--                    <b>Коррекция микрофлоры влагалища</b> <br>-->
-<!--                    <span class="green-title">-->
-<!--                      Важно заселить микрофлору влагалища лактобактериями для предупреждения рецидивов инфекционно-воспалительных процессов-->
-<!--                    </span>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </b-col>-->
-<!--            </b-row>-->
-<!--            <b-row class="mt-3 justify-content-between">-->
-<!--              <b-col md="6" sm="12" class="flex justify-content-center mb-4">-->
-<!--                <div class="why-bifolak">-->
-<!--                  <div class="why-bifolak__count">-->
-<!--                    3-->
-<!--                  </div>-->
-<!--                  <div class="why-bifolak__data">-->
-<!--                    <b>Короткий курс</b> - Возможность быстрого восстановления микрофлоры влагалища-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </b-col>-->
-<!--              <b-col md="6" sm="12" class="flex justify-content-center mb-4">-->
-<!--                <div class="why-bifolak">-->
-<!--                  <div class="why-bifolak__count">-->
-<!--                    4-->
-<!--                  </div>-->
-<!--                  <div class="why-bifolak__data">-->
-<!--                     <b>Направленное действие</b> - Одномоментное поступление большого количества жизнеспособних лакто- и бифидобактерий-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </b-col>-->
-<!--            </b-row>-->
-<!--          </b-container>-->
-<!--        </div>-->
       </div>
       <b-container fluid>
-        <div class="mt-5" id="how-use">
+        <div data-aos="zoom-out-up" class="mt-5" id="how-use">
           <h2 class="green-title mb-5">
             Как использовать Бифолак?
           </h2>
@@ -352,12 +292,12 @@
         </div>
       </b-container>
       <div class="px-3 py-5">
-        <div class="mb-5">
+        <div data-aos="zoom-out-up" class="mb-5">
           <h2>
             ПРИОБРЕСТИ <span class="green-title">БИФОЛАК</span> МОЖНО ЗДЕСЬ
           </h2>
         </div>
-        <b-container fluid>
+        <b-container data-aos="zoom-out-up" fluid>
           <b-row class="mt-5 px-3 py-3 justify-content-between">
             <b-col md="6" sm="12" class="flex justify-content-center mb-4">
               <div class="card-link card-link__liki-24" @click="buyIn('https://liki24.com/uk/search/?q=%D0%B1%D0%B8%D1%84%D0%BE%D0%BB%D0%B0%D0%BA')">
@@ -386,10 +326,10 @@
 <!--            </b-col>-->
 <!--          </b-row>-->
 <!--        </b-container>-->
-        <h6 class="mb-2">
+        <h6 data-aos="zoom-out-up" class="mb-2">
           Остались вопросы или не можете найти Бифолак в аптеке? Выберите свой город для связи с нашим консультантом и мы обязательно поможем Вам
         </h6>
-        <b-container fluid>
+        <b-container data-aos="zoom-out-up" fluid>
           <b-row class="mb-5 flex-column px-3 py-3 justify-content-between">
             <b-col class="flex justify-content-center mb-4">
               <vSelect
@@ -409,8 +349,12 @@
               </a>
             </b-col>
             <b-col v-if="consultant" class="flex justify-content-center mb-4">
-              <div class="card-link__telegram" @click="buyIn(`https://t.me/${consultant.nick}`)">
-                  Связаться через Telegram
+              <div class="card-link__telegram flex" @click="buyIn(`https://t.me/${consultant.nick}`)">
+                  <div>
+                    Связаться через Telegram
+                  </div>
+
+                <img src="../assets/telegram.png" alt="" style="max-width: 24px; margin-left: 4px">
               </div>
             </b-col>
           </b-row>
@@ -418,6 +362,7 @@
       </div>
     </b-container>
     </div>
+    <img src="../assets/not-lik.jpg" alt="" style="max-width: 100%">
   </div>
 </template>
 
@@ -426,6 +371,9 @@ import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 // optional style for arrows & dots
 import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import vSelect from 'vue-select'
 
@@ -510,6 +458,9 @@ export default {
         ]
       }
     }
+  },
+  created() {
+    AOS.init();
   },
   methods: {
     buyIn(link) {
