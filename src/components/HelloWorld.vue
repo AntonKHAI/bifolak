@@ -480,6 +480,7 @@ export default {
 
     scrollToBlock(id) {
       document.querySelector(id).scrollIntoView({behavior: 'smooth', block: 'start'});
+      document.querySelector(id).scrollTop -= 100;
       this.openSidebar = false
     }
   }
