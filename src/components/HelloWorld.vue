@@ -344,17 +344,21 @@
               />
             </b-col>
             <b-col v-if="consultant" class="flex justify-content-center mb-4">
-              <a :href="`tel:${consultant.phone}`" type="tel">
-                {{consultant.phone}}
-              </a>
+              <img src="../assets/phone.png" alt="" style="max-width: 36px; margin-right: 6px">
+              <div class="card-link__call flex" @click="buyIn(`https://t.me/${consultant.nick}`)">
+                <div>
+                  <a :href="`tel:${consultant.phone}`" type="tel">
+                    Позвонить
+                  </a>
+                </div>
+              </div>
             </b-col>
             <b-col v-if="consultant" class="flex justify-content-center mb-4">
+              <img src="../assets/telegram.png" alt="" style="max-width: 36px; margin-right: 6px">
               <div class="card-link__telegram flex" @click="buyIn(`https://t.me/${consultant.nick}`)">
                   <div>
                     Связаться через Telegram
                   </div>
-
-                <img src="../assets/telegram.png" alt="" style="max-width: 24px; margin-left: 4px">
               </div>
             </b-col>
           </b-row>
@@ -362,7 +366,7 @@
       </div>
     </b-container>
     </div>
-    <img src="../assets/not-lik.jpg" alt="" style="max-width: 100%">
+    <img src="../assets/not-lik.jpg" alt="" class="mb-2" style="max-width: 100%">
   </div>
 </template>
 
@@ -658,8 +662,22 @@ ol.gradient-list {
 .card-link__telegram {
   padding: 5px;
   border: 1px solid #0088CC;
-  border-radius: 3px;
-  color: #0088CC;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #0088CC;
+}
+
+.card-link__call {
+  padding: 5px;
+  border: 1px solid #0088CC;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #1e931e;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 .card-link__invert {
