@@ -344,7 +344,7 @@
               />
             </b-col>
             <b-col v-if="consultant" class="flex justify-content-center mb-4">
-              <img src="../assets/phone.png" alt="" style="max-width: 36px; margin-right: 6px">
+              <img src="../assets/phone.png" alt="" style="max-width: 36px; margin-right: 6px; border-radius: 50%;">
               <div class="card-link__call flex" @click="buyIn(`https://t.me/${consultant.nick}`)">
                 <div>
                   <a :href="`tel:${consultant.phone}`" type="tel">
