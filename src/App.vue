@@ -13,13 +13,13 @@
   color: #2c3e50;
 }
 
-.slick-prev:before {
-  content: "<";
-  color: brown !important;
-}
-
-.slick-next:before {
-  content: ">";
-  color: brown !important;
-}
+//.slick-prev:before {
+//  content: "<";
+//  color: brown !important;
+//}
+//
+//.slick-next:before {
+//  content: ">";
+//  color: brown !important;
+//}
 </style>
