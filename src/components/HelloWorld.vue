@@ -11,7 +11,7 @@
           <b-nav-item @click="scrollToBlock('#vaginal')">Вагинальный дисбиоз</b-nav-item>
           <b-nav-item @click="scrollToBlock('#how-fix')">Как лечить?</b-nav-item>
           <b-nav-item @click="scrollToBlock('#why')">Почему Бифолак?</b-nav-item>
-          <b-nav-item @click="scrollToBlock('#how-use')">Как использоавть Бифолак?</b-nav-item>
+          <b-nav-item @click="scrollToBlock('#how-use')">Как использовать Бифолак?</b-nav-item>
           <b-nav-item @click="scrollToBlock('#buy')">Где купить?</b-nav-item>
         </b-navbar-nav>
         <div id="hamburger" v-b-toggle.sidebar-1 header-close class="nav-mobile" :class="{ 'open': openSidebar }" @click="toggle">
