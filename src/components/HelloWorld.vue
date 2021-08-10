@@ -403,7 +403,7 @@
         </a>
       </div>
     </b-container>
-    <img src="../assets/not-lik.jpg" alt="" class="mb-2" style="max-width: 100%">
+    <img src="../assets/not-lik.jpg" alt="" class="mb-2" style="max-width: 320px">
   </div>
 </template>
 
