@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <b-navbar fixed="top" class="justify-content-between">
-      <b-navbar-brand href="#">
+      <b-navbar-brand href="#" class="title">
         Бифолак
       </b-navbar-brand>
 
@@ -24,7 +24,9 @@
     <div>
       <b-sidebar id="sidebar-1" backdrop shadow @hidden="toggle" v-if="openSidebar">
         <template #header>
-          Бифолак
+          <span class="title">
+            Бифолак
+          </span>
         </template>
         <div class="px-2">
           <div class="mob-nav-item pointer" @click="scrollToBlock('#vaginal')">Вагинальный дисбиоз</div>
@@ -33,11 +35,20 @@
           <div class="mob-nav-item pointer" @click="scrollToBlock('#how-use')">Как использоавть Бифолак?</div>
           <div class="mob-nav-item pointer" @click="scrollToBlock('#buy')">Где купить?</div>
         </div>
+        <hr>
+        <div class="flex my-2 mob-nav-item">
+          <a href="#">
+            <img src="../assets/Instagram.png" alt="" class="mb-2 mx-1" style="max-width: 35px">
+          </a>
+          <a href="#">
+            <img src="../assets/Facebook.png" alt="" class="mb-2 mx-1" style="max-width: 35px">
+          </a>
+        </div>
       </b-sidebar>
     </div>
     <div class="mt-5 py-2">
       <div class="mb-4 px-3">
-        <h2 class="green-title">
+        <h2 class="green-title mt-2">
           БЕРЕЖНАЯ КОРРЕКЦИЯ <br>
           МИКРОФЛОРЫ ВЛАГАЛИЩА
         </h2>
@@ -171,7 +182,7 @@
         </b-col>
       </b-row>
      </b-container>
-    <h2 class="green-title most-title purple-title">
+    <h2 class="green-title most-title purple-title py-2">
       Симптомы <br> вагинального дисбиоза
     </h2>
      <div>
@@ -244,8 +255,9 @@
           Необходимость второго этапа обусловлена тем, что антимикробные средства помимо подавления роста болезнетворных бактерий оказывают также отрицательное значение и на численность лактобактерий, обеспечивающих в норме защитную функцию. Поэтому для скорейшего обеспечения их численного превосходства в экосистеме половых путей специалисты рекомендуют курсовое применение специальных «женских» пробиотиков.
         </div>
       </div>
+      </b-container>
 
-      <div class="mt-5 purple-block" id="why">
+      <div class="mt-5 px-2 purple-block" id="why">
         <h2 class="green-title mb-5 white-color pt-3" style="font-size: 20px;">
           БИФОЛАК – СУППОЗИТОРИИ ДЛЯ ЭФФЕКТИВНОГО ВОССТАНОВЛЕНИЯ ВАГИНАЛЬНОЙ МИКРОФЛОРЫ
         </h2>
@@ -253,6 +265,7 @@
           ПОЧЕМУ БИФОЛАК ?
         </h2>
         <div data-aos="zoom-out-up" class="slide-wrap">
+          <b-container fluid>
           <VueSlickCarousel v-bind="settings">
             <div><img src="../assets/1slide.jpg" alt="" class="slide-img"></div>
             <div><img src="../assets/2slide.jpg" alt="" class="slide-img"></div>
@@ -261,8 +274,10 @@
             <div><img src="../assets/5slide.jpg" alt="" class="slide-img"></div>
             <div><img src="../assets/6slide.jpg" alt="" class="slide-img"></div>
           </VueSlickCarousel>
+          </b-container>
         </div>
       </div>
+
       <b-container fluid>
         <div data-aos="zoom-out-up" class="mt-5" id="how-use">
           <h2 class="mb-3 most-title" style="color: #333333">
@@ -367,8 +382,20 @@
           </b-row>
         </b-container>
       </div>
-    </b-container>
     </div>
+    <b-container fluid>
+      <div class="mb-1 most-title" style="color: #333333">
+        Мы в социальных сетях
+      </div>
+      <div class="flex justify-content-center">
+        <a href="#">
+          <img src="../assets/Instagram.png" alt="" class="mb-2 mx-1" style="max-width: 50px">
+        </a>
+        <a href="#">
+          <img src="../assets/Facebook.png" alt="" class="mb-2 mx-1" style="max-width: 50px">
+        </a>
+      </div>
+    </b-container>
     <img src="../assets/not-lik.jpg" alt="" class="mb-2" style="max-width: 100%">
   </div>
 </template>
@@ -491,7 +518,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import url(https://fonts.googleapis.com/css?family=Montserrat:900|Raleway:400,400i,700,700i);
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic');
 
 $main-green: '#eee';
 $black: #1d1f20;
@@ -499,6 +526,11 @@ $blue: #83e4e2;
 $green: #a2ed56;
 $yellow: #fddc32;
 $white: #fafafa;
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
 
 %boxshadow {
   box-shadow: 0.25rem 0.25rem 0.6rem rgba(0,0,0,0.05), 0 0.5rem 1.125rem rgba(75,0,0,0.05);
