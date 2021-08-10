@@ -173,7 +173,7 @@
     </h2>
      <div>
        <b-container fluid>
-      <b-row data-aos="fade-up" class="mt-1 px-3 py-3">
+      <b-row data-aos="fade-up" class="px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-4">
           <img src="../assets/tap.png" alt="main" style="max-width: 40%; max-height: 300px">
         </b-col>
@@ -191,7 +191,7 @@
           </ul>
         </b-col>
       </b-row>
-      <b-row data-aos="fade-up" class="mt-1 px-3 py-3">
+      <b-row data-aos="fade-up" class="px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-4">
           <img src="../assets/fish.png" alt="main" style="max-width: 40%; max-height: 300px">
         </b-col>
@@ -203,7 +203,7 @@
           </ul>
         </b-col>
       </b-row>
-      <b-row data-aos="fade-up" class="mt-1 px-3 py-3">
+      <b-row data-aos="fade-up" class="px-3 py-3">
         <b-col md="2" sm="12" class="flex justify-content-center mb-4">
           <img src="../assets/heart.png" alt="main" style="max-width: 40%; max-height: 300px">
         </b-col>
