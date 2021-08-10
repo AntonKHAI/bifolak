@@ -1,8 +1,8 @@
 <template>
   <div class="main">
     <b-navbar fixed="top" class="justify-content-between">
-      <b-navbar-brand href="#" class="title">
-        Бифолак
+      <b-navbar-brand href="#" class="title text-uppercase">
+        Бифолак<sup>®</sup>
       </b-navbar-brand>
 
       <b-collapse is-nav>
@@ -24,8 +24,8 @@
     <div>
       <b-sidebar id="sidebar-1" backdrop shadow @hidden="toggle" v-if="openSidebar">
         <template #header>
-          <span class="title">
-            Бифолак
+          <span class="green-title text-uppercase">
+            Бифолак<sup>®</sup>
           </span>
         </template>
         <div class="px-2">
@@ -529,7 +529,10 @@ $white: #fafafa;
 
 .title {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 22px;
+  padding: 0 !important;
+  color: #fff !important;
 }
 
 %boxshadow {
@@ -654,7 +657,7 @@ ol.gradient-list {
 
 .navbar {
   padding: .5rem 1rem;
-  background-color: rgba(48, 255, 0, 0.25);
+  background-color: #079045ab;
   -webkit-backdrop-filter: blur(7px);
   backdrop-filter: blur(7px);
 }
