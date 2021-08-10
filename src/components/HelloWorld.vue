@@ -32,7 +32,7 @@
           <div class="mob-nav-item pointer" @click="scrollToBlock('#vaginal')">Вагинальный дисбиоз</div>
           <div class="mob-nav-item pointer" @click="scrollToBlock('#how-fix')">Как лечить?</div>
           <div class="mob-nav-item pointer" @click="scrollToBlock('#why')">Почему Бифолак?</div>
-          <div class="mob-nav-item pointer" @click="scrollToBlock('#how-use')">Как использоавть Бифолак?</div>
+          <div class="mob-nav-item pointer" @click="scrollToBlock('#how-use')">Как использовать Бифолак?</div>
           <div class="mob-nav-item pointer" @click="scrollToBlock('#buy')">Где купить?</div>
         </div>
         <hr>
@@ -48,7 +48,7 @@
     </div>
     <div class="mt-5 py-2">
       <div class="mb-4 px-3">
-        <h2 class="green-title mt-2">
+        <h2 class="main-title mt-2">
           БЕРЕЖНАЯ КОРРЕКЦИЯ <br>
           МИКРОФЛОРЫ ВЛАГАЛИЩА
         </h2>
@@ -57,22 +57,22 @@
         <img src="../assets/roses.jpg" alt="main" style="max-width: 100%">
       </div>
       <p class="text-justify mb-4 px-3" id="vaginal">
-        В норме во влагалище у женщины обитает так называемая нормальная микрофлора. Она состоит примерно на 90% из лактобактерий, на 10% - из бифидобактерий, и меньше 1% составляют так называемые «ключевые клетки влагалища». Нормальная микрофлора находится в постоянном равновесии между собой и с окружающей средой. Она не допускает появление никакой другой инфекции, и не допускает изменение соотношения возбудителей, живущих во влагалище в норме.
+        В норме во влагалище у женщины обитает так называемая <b>нормальная микрофлора</b>. Она состоит примерно <b>на 90% из лактобактерий, на 10% - из бифидобактерий</b>, и меньше 1% составляют так называемые «ключевые клетки влагалища». Нормальная микрофлора находится в постоянном равновесии между собой и с окружающей средой. Она не допускает появление никакой другой инфекции, и не допускает изменение соотношения возбудителей, живущих во влагалище в норме.
       </p>
       <div class="mt-2 mb-4 px-3">
         <img src="../assets/list.jpeg" alt="main" style="max-width: 100%">
       </div>
-      <div class=" colored-block">
-        Дисбактериоз влагалища (дисбиоз) – нарушения естественной микрофлоры, которое характеризуется изменением равновесия между полезными и патогенными «обитателями» флоры. Данный процесс сопровождается снижением количества бифидо- и лактобактерий и увеличением численности возбудителя заболевания.
+      <div class="colored-block">
+        <b>Дисбактериоз влагалища (дисбиоз)</b> – нарушения естественной микрофлоры, которое характеризуется изменением равновесия между полезными и патогенными «обитателями» флоры. Данный процесс сопровождается снижением количества бифидо- и лактобактерий и увеличением численности возбудителя заболевания.
       </div>
     </div>
      <b-container fluid>
-      <b-row data-aos="fade-up" class="mt-1 px-3 py-3">
-        <h2 class="mb-4 most-title" style="color: #333333">
+      <b-row data-aos="fade-up" class="mt-1 px-3 py-1">
+        <h2 class="mb-4 main-block-title" style="color: #333333">
           На изменение микрофлоры влияет множество факторов
         </h2>
         <b-col md="2" sm="12" class="flex justify-content-center mb-3">
-          <img src="../assets/snow.jpg" alt="main" style="max-width: 100%">
+          <img src="../assets/snow.jpg" alt="main" style="max-width: 120px">
         </b-col>
         <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
           <p>
@@ -84,9 +84,9 @@
           </p>
         </b-col>
       </b-row>
-      <b-row data-aos="fade-up" class="px-3 py-3">
+      <b-row data-aos="fade-up" class="px-3 py-1">
         <b-col md="2" sm="12" class="flex justify-content-center mb-3">
-          <img src="../assets/clear.jpg" alt="main" style="max-width: 100%">
+          <img src="../assets/clear.jpg" alt="main" style="max-width: 120px">
         </b-col>
         <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
           <p>
@@ -98,9 +98,9 @@
           </p>
         </b-col>
       </b-row>
-      <b-row data-aos="fade-up" class="px-3 py-3">
+      <b-row data-aos="fade-up" class="px-3 py-1">
         <b-col md="2" sm="12" class="flex justify-content-center mb-3">
-          <img src="../assets/bull.jpg" alt="main" style="max-width: 100%">
+          <img src="../assets/bull.jpg" alt="main" style="max-width: 120px">
         </b-col>
         <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
           <p>
@@ -112,9 +112,9 @@
           </p>
         </b-col>
       </b-row>
-      <b-row data-aos="fade-up" class="px-3 py-3">
+      <b-row data-aos="fade-up" class="px-3 py-1">
         <b-col md="2" sm="12" class="flex justify-content-center mb-3">
-          <img src="../assets/arrow.jpg" alt="main" style="max-width: 100%">
+          <img src="../assets/arrow.jpg" alt="main" style="max-width: 120px">
         </b-col>
         <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
           <p>
@@ -126,9 +126,9 @@
           </p>
         </b-col>
       </b-row>
-      <b-row data-aos="fade-up" class="px-3 py-3">
+      <b-row data-aos="fade-up" class="px-3 py-1">
         <b-col md="2" sm="12" class="flex justify-content-center mb-3">
-          <img src="../assets/couple.jpg" alt="main" style="max-width: 100%">
+          <img src="../assets/couple.jpg" alt="main" style="max-width: 120px">
         </b-col>
         <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
           <p>
@@ -139,9 +139,9 @@
           </p>
         </b-col>
       </b-row>
-      <b-row data-aos="fade-up" class="px-3 py-3">
+      <b-row data-aos="fade-up" class="px-3 py-1">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
-          <img src="../assets/plane.jpg" alt="main" style="max-width: 100%">
+          <img src="../assets/plane.jpg" alt="main" style="max-width: 120px">
         </b-col>
         <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
           <p>
@@ -153,9 +153,9 @@
           </p>
         </b-col>
       </b-row>
-      <b-row data-aos="fade-up" class="px-3 py-3">
+      <b-row data-aos="fade-up" class="px-3 py-1">
         <b-col md="2" sm="12" class="flex justify-content-center mb-2">
-          <img src="../assets/stuff.jpg" alt="main" style="max-width: 100%">
+          <img src="../assets/stuff.jpg" alt="main" style="max-width: 120px">
         </b-col>
         <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
           <p>
@@ -167,22 +167,8 @@
           </p>
         </b-col>
       </b-row>
-      <b-row data-aos="fade-up" class="px-3 py-3">
-        <b-col md="2" sm="12" class="flex justify-content-center mb-2">
-          <img src="../assets/women.jpg" alt="main" style="max-width: 100%">
-        </b-col>
-        <b-col md="10" sm="12" class="flex justify-content-md-start align-items-center">
-          <p>
-            <span class="green-title">
-              Инфекционно-воспалительные заболевания
-            </span>
-            <br>
-            Любые инфекционно-воспалительные заболевания органов малого таза, инфекции передающиеся половым путем.
-          </p>
-        </b-col>
-      </b-row>
      </b-container>
-    <h2 class="green-title most-title purple-title py-2">
+    <h2 class="main-block-title purple-title py-2">
       Симптомы <br> вагинального дисбиоза
     </h2>
      <div>
@@ -235,13 +221,17 @@
          </ul>
         </b-col>
       </b-row>
-      <h5 data-aos="zoom-out-up" class="mt-2 mb-4" id="how-fix">
-        Необходимо знать и помнить, что нарушенный баланс микрофлоры повышает риск развития воспалительных и инфекционных заболеваний.
-      </h5>
-      <div data-aos="zoom-out-up" class="text-justify">
-        Основные принципы лечения дисбиоза влагалища направлены на подавление роста болезнетворных и условно-патогенных бактерий с последующим восстановлением численности лактобактерий. Поэтому лечение женщин с бактериальным вагинозом рекомендуется проводить в два этапа:
-      </div>
-      </b-container>
+     </b-container>
+      <h6 data-aos="zoom-out-up" class="mb-4 colored-block" id="how-fix">
+        Необходимо знать и помнить, что <b>нарушенный баланс микрофлоры повышает риск развития воспалительных и инфекционных заболеваний</b>.
+      </h6>
+
+       <b-container>
+         <div data-aos="zoom-out-up" class="text-justify">
+           <b>Основные принципы лечения</b> дисбиоза влагалища направлены на подавление роста болезнетворных и условно-патогенных бактерий с последующим восстановлением численности лактобактерий. Поэтому лечение женщин с бактериальным вагинозом рекомендуется проводить <b>в два этапа:</b>
+         </div>
+       </b-container>
+
       <div class="mt-3">
         <div class="mb-2">
           <div data-aos="zoom-out-up">
@@ -258,19 +248,19 @@
         </div>
         <b-container fluidxs>
           <div data-aos="zoom-out-up" class="text-justify">
-            Необходимость второго этапа обусловлена тем, что антимикробные средства помимо подавления роста болезнетворных бактерий оказывают также отрицательное значение и на численность лактобактерий, обеспечивающих в норме защитную функцию. Поэтому для скорейшего обеспечения их численного превосходства в экосистеме половых путей специалисты рекомендуют курсовое применение специальных «женских» пробиотиков.
+            Необходимость второго этапа обусловлена тем, что антимикробные средства помимо подавления роста болезнетворных бактерий оказывают также отрицательное значение и на численность лактобактерий, обеспечивающих в норме защитную функцию. Поэтому для скорейшего обеспечения их численного превосходства в экосистеме половых путей <b>специалисты рекомендуют курсовое применение специальных «женских» пробиотиков.</b>
           </div>
         </b-container>
       </div>
 
-       <h2 class="mb-5 pt-3" style="font-size: 20px;">
+       <div class="mb-5 py-3 mt-5 purple-title main-title">
          БИФОЛАК – СУППОЗИТОРИИ ДЛЯ ЭФФЕКТИВНОГО ВОССТАНОВЛЕНИЯ ВАГИНАЛЬНОЙ МИКРОФЛОРЫ
-       </h2>
+       </div>
 
-      <div class="mt-5 px-2 purple-block" id="why">
-        <h2 class="green-title mb-2 pt-2">
-          ПОЧЕМУ БИФОЛАК ?
-        </h2>
+      <div class="mt-3 px-2" id="why">
+        <div class="main-block-title mb-2 pt-2">
+          Почему Бифолак?
+        </div>
         <div data-aos="zoom-out-up" class="slide-wrap">
           <b-container fluid>
           <VueSlickCarousel v-bind="settings">
@@ -287,16 +277,16 @@
 
       <b-container fluid>
         <div data-aos="zoom-out-up" class="mt-5" id="how-use">
-          <h2 class="mb-3 most-title" style="color: #333333">
+          <div class="mb-3 main-block-title">
             Как использовать Бифолак?
-          </h2>
-          <h4 style="font-size: 18px">
-            Бифолак применяют <br> по 1-2 суппозитория в течении 10 дней <br> на ночь
+          </div>
+          <h4 style="font-size: 20px; letter-spacing: 1.3px">
+            Бифолак применяют <br> по <b>1-2</b> суппозитория <br>в течении <b>10</b> дней <b>на ночь</b>
           </h4>
-          <img src="../assets/how-use2.png" alt="" style="max-width: 70%">
-          <h5 class="mb-2 descr">
+          <img class="mb-1" src="../assets/how-use2.png" alt="" style="max-width: 70%">
+          <h6 class="mb-3 descr">
             Суппозитории растворяются во влагалище и могут вытекать вместе с выделениями, поэтому их лучше всего вводить перед сном
-          </h5>
+          </h6>
 
           <ol class="gradient-list">
             <li data-aos="fade-up">Посетите туалет и сделайте гигиенические процедуры без использования мыла и других моющих средств, только водой.</li>
@@ -304,23 +294,23 @@
             <li data-aos="fade-up">Оторвите или отрежьте упаковку с одним суппозиторием.</li>
             <li data-aos="fade-up">Чтобы раскрыть упаковку, со стороны острого конца свечи потяните за «ушки» в разные стороны. Упаковка отрывается очень легко!</li>
             <li data-aos="fade-up">Принять лежачее положение и пальцем ввести свечу, как можно глубже, во влагалище.</li>
-            <img src="../assets/how-use1.jpg" alt="" style="max-width: 320px">
+            <img data-aos="fade-up" src="../assets/how-use1.jpg" alt="" style="max-width: 320px">
             <div class="mb-4">
               Схема введения свечи во влагалище
             </div>
             <li data-aos="fade-up">На этом все. В течение получаса нежелательно вставать, чтобы свеча успела растаять во влагалище. После введения суппозиторий используйте обычную или ежедневную прокладку, чтобы собрать выделения.</li>
-            <img src="../assets/how-use3.jpeg" alt="" style="max-width: 100%">
           </ol>
+          <img src="../assets/how-use3.jpeg" alt="" style="max-width: 80%">
         </div>
       </b-container>
-      <div class="px-3 py-3">
-        <div data-aos="zoom-out-up" class="mb-5">
-          <h2>
-            ПРИОБРЕСТИ <span class="green-title">БИФОЛАК</span> МОЖНО ЗДЕСЬ
-          </h2>
+      <div class="px-3 py-3 mt-1">
+        <div data-aos="zoom-out-up">
+          <div class="main-block-title">
+            ПРИОБРЕСТИ <span style="color: #2e6525">БИФОЛАК</span> МОЖНО ЗДЕСЬ
+          </div>
         </div>
         <b-container data-aos="zoom-out-up" fluid>
-          <b-row class="mt-5 px-3 py-3 justify-content-between">
+          <b-row class="mt-2 px-3 py-3 justify-content-between">
             <b-col md="6" sm="12" class="flex justify-content-center mb-4">
               <div class="card-link card-link__liki-24" @click="buyIn('https://liki24.com/uk/search/?q=%D0%B1%D0%B8%D1%84%D0%BE%D0%BB%D0%B0%D0%BA')">
                 <div class="light-blue-title">
@@ -349,13 +339,13 @@
 <!--          </b-row>-->
 <!--        </b-container>-->
         <h6 data-aos="zoom-out-up" class="mb-2">
-          <div class="mb-1 most-title" style="color: #333333">
-            Остались вопросы или не можете найти Бифолак в аптеке?
+          <div class="mb-3 main-block-title" style="color: #333333">
+            Остались вопросы или <br>не можете найти <br> <span style="color: #2e6525">Бифолак</span> в аптеке?
           </div>
-          Выберите свой город для связи с нашим консультантом и мы обязательно поможем Вам
+          <b>Выберите свой город</b> для связи с нашим консультантом и мы <b>обязательно поможем Вам</b>
         </h6>
         <b-container data-aos="zoom-out-up" fluid>
-          <b-row class="mb-5 flex-column px-3 py-3 justify-content-between">
+          <b-row class="flex-column px-3 py-3 justify-content-between">
             <b-col class="flex justify-content-center mb-4">
               <vSelect
                   style="width: 300px"
@@ -391,19 +381,19 @@
       </div>
     </div>
     <b-container fluid>
-      <div class="mb-1 most-title" style="color: #333333">
+      <div class="mb-1 social-title" style="color: #333333">
         Мы в социальных сетях
       </div>
       <div class="flex justify-content-center">
         <a href="#">
-          <img src="../assets/Instagram.png" alt="" class="mb-2 mx-1" style="max-width: 50px">
+          <img src="../assets/Instagram.png" alt="" class="mb-2 mx-1" style="max-width: 45px">
         </a>
         <a href="#">
-          <img src="../assets/Facebook.png" alt="" class="mb-2 mx-1" style="max-width: 50px">
+          <img src="../assets/Facebook.png" alt="" class="mb-2 mx-1" style="max-width: 43px">
         </a>
       </div>
     </b-container>
-    <img src="../assets/not-lik.jpg" alt="" class="mb-2" style="max-width: 320px">
+    <img src="../assets/not-lik.jpg" alt="" class="mb-3" style="max-width: 90%">
   </div>
 </template>
 
@@ -465,7 +455,9 @@ export default {
       ],
       settings: {
         "dots": true,
-        "infinite": false,
+        "autoplay": true,
+        autoplaySpeed: 4500,
+        "infinite": true,
         // arrows: true,
         "speed": 500,
         "slidesToShow": 2,
@@ -533,6 +525,20 @@ $blue: #83e4e2;
 $green: #a2ed56;
 $yellow: #fddc32;
 $white: #fafafa;
+
+.main-title {
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+.main-block-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.social-title {
+  font-size: 18px;
+}
 
 .title {
   font-family: 'Montserrat', sans-serif;
@@ -684,7 +690,7 @@ ol.gradient-list {
 }
 
 .slide-wrap {
-  padding: 30px;
+  //padding: 30px;
 }
 
 .green-title {
@@ -704,12 +710,12 @@ ol.gradient-list {
 }
 
 .purple-title {
-  background-color: #dc89d24a !important;
+  background-color: rgba(220, 137, 210, 0.29) !important;
   color: #333333 !important;
 }
 
 .purple-block {
-  background-color: #dc89d24a !important;
+  background-color: rgba(220, 137, 210, 0.29) !important;
   color: #FFFFFF !important;
 }
 
@@ -720,6 +726,7 @@ ol.gradient-list {
 .light-blue-title {
   color: #00acc1;
   font-weight: 600;
+  font-size: 18px;
 }
 
 .card-link {
@@ -733,7 +740,7 @@ ol.gradient-list {
   justify-content: center;
   border-radius: 5px;
   border: 1px solid #e3e3e3;
-  padding: 20px;
+  padding: 12px 20px;
 }
 
 .card-link__telegram {
@@ -763,11 +770,11 @@ ol.gradient-list {
 }
 
 .card-link__tabletki {
-  box-shadow: 5px 5px 23px 5px rgba(89, 163, 77, 0.35);
+  box-shadow: 3px 3px 20px 3px rgba(89, 163, 77, 0.35);
 }
 
 .card-link__liki-24 {
-  box-shadow: 5px 5px 23px 5px rgba(0, 172, 193, 0.35);
+  box-shadow: 3px 3px 20px 3px rgba(0, 172, 193, 0.35);
 }
 
 .nav-mobile {
