@@ -452,6 +452,11 @@ export default {
           place: 'Харьков',
           nick: 'alexandrarebrova'
         },
+        {
+          phone: '0 (95) 931 56 78',
+          place: 'Полтава',
+          nick: 'Vladislavperederii'
+        },
       ],
       settings: {
         "dots": true,
